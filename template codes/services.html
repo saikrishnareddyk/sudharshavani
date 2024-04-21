@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Service Cards</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .services-offered {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .services-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .service-card {
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 200px; /* Width of the cards */
+        text-align: center;
+        margin: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .icon-container {
+        background: #ffffff; /* Change to match your icon's background color */
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        margin: 20px auto; /* Centering the icon container */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .service-card img {
+        max-width: 50px; /* Adjust the size of the icon image */
+        height: auto;
+    }
+
+    .service-card p {
+        margin: 10px 0;
+        font-weight: bold;
+        color: #333333; /* Change to the text color you prefer */
+    }
+</style>
+</head>
+<body>
+
+<div class="services-offered">Services Offered</div>
+
+<div class="services-container">
+    <div class="service-card">
+        <div class="icon-container">
+            <img src="./assets/images/compass-logo.png" alt="New House Planning">
+        </div>
+        <p>New House Planning</p>
+    </div>
+    <!-- Repeat other service cards following the same pattern -->
+</div>
+
+</body>
+</html>

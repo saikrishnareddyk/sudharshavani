@@ -1,0 +1,124 @@
+
+    /* Custom CSS */
+    #whatsapp-icon {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        transition: transform 0.3s ease-in-out;
+      }
+  
+      #whatsapp-icon:hover {
+        transform: scale(1.1);
+      }
+  
+      .nav-link {
+        margin: 0 5px;
+      }
+  
+      .button {
+        margin-top: 10px;
+      }
+
+      /* navbar/ menu */
+      .navbar-brand img{
+        height: 50px;
+      }
+  
+      /* about section  start*/
+      .video-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      .content {
+        margin-top: 20px;
+      }
+  
+      .read-more-btn {
+        text-align: center;
+        margin-top: 20px;
+      }
+  
+      @media (max-width: 768px) {
+        .video-container {
+          flex-direction: column;
+        }
+      }
+
+    /* about section  end*/
+  
+      /* service  card section start */
+      .homecard {
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: auto;
+        position: relative;
+        margin-top: 85px;
+        padding: 20px 20px;
+        text-align: center;
+        transition: 340ms ease;
+      }
+  
+      .homecard img {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: -13px;
+        height: 97px;
+        width: 97px;
+        left: 50%;
+        background: #ffffff;
+        /* Change to match your icon's background color */
+        border-radius: 50%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+  
+      .homecard h6 {
+        line-height: 20px;
+        padding-top: 30px;
+      }
+  
+      .homecard:hover {
+        transform: scale(1.05);
+        background-color: darkgoldenrod;
+        color: #ffffff;
+        box-shadow: 5px 5px 20px rgba(red 0, green 0, blue 0, alpha 0.6);
+  
+      }
+  
+      .Contactcard {
+        box-shadow: 0 4px 8px 0 grey;
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+        background-color: white;
+      }
+  
+      .Contacttitle {
+        color: grey;
+        font-size: 18px;
+      }
+  
+      .Contactcard:hover {
+        transform: scale(1.04);
+        box-shadow: 5px 5px 20px rgba(red 0, green 0, blue 0, alpha 0.6);
+  
+      }
+  
+      /* card section end */
+  
+      .footer {
+        background-color: #cfcece;
+        color: #1b1b1b;
+        padding-top: 10px;
+        padding-bottom: 10px;
+  
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+  
+      
