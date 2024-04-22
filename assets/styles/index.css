@@ -1,124 +1,194 @@
+/* header css start */
+/* Custom CSS for header */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(269.92deg, #589E52 0%, #5DC054 100%);;
+  color: #fff;
+}
 
-    /* Custom CSS */
-    #whatsapp-icon {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        z-index: 1000;
-        transition: transform 0.3s ease-in-out;
-      }
-  
-      #whatsapp-icon:hover {
-        transform: scale(1.1);
-      }
-  
-      .nav-link {
-        margin: 0 5px;
-      }
-  
-      .button {
-        margin-top: 10px;
-      }
+.contact-info {
+  display: flex;
+  align-items: center;
+}
 
-      /* navbar/ menu */
-      .navbar-brand img{
-        height: 50px;
-      }
-  
-      /* about section  start*/
-      .video-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-  
-      .content {
-        margin-top: 20px;
-      }
-  
-      .read-more-btn {
-        text-align: center;
-        margin-top: 20px;
-      }
-  
-      @media (max-width: 768px) {
-        .video-container {
-          flex-direction: column;
-        }
-      }
+.contact-info span {
+  margin-right: 5px;
+}
 
-    /* about section  end*/
-  
-      /* service  card section start */
-      .homecard {
-        background: #ffffff;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        width: auto;
-        position: relative;
-        margin-top: 85px;
-        padding: 20px 20px;
-        text-align: center;
-        transition: 340ms ease;
-      }
-  
-      .homecard img {
-        position: absolute;
-        transform: translate(-50%, -50%);
-        top: -13px;
-        height: 97px;
-        width: 97px;
-        left: 50%;
-        background: #ffffff;
-        /* Change to match your icon's background color */
-        border-radius: 50%;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      }
-  
-      .homecard h6 {
-        line-height: 20px;
-        padding-top: 30px;
-      }
-  
-      .homecard:hover {
-        transform: scale(1.05);
-        background-color: darkgoldenrod;
-        color: #ffffff;
-        box-shadow: 5px 5px 20px rgba(red 0, green 0, blue 0, alpha 0.6);
-  
-      }
-  
-      .Contactcard {
-        box-shadow: 0 4px 8px 0 grey;
-        max-width: 300px;
-        margin: auto;
-        text-align: center;
-        font-family: arial;
-        background-color: white;
-      }
-  
-      .Contacttitle {
-        color: grey;
-        font-size: 18px;
-      }
-  
-      .Contactcard:hover {
-        transform: scale(1.04);
-        box-shadow: 5px 5px 20px rgba(red 0, green 0, blue 0, alpha 0.6);
-  
-      }
-  
-      /* card section end */
-  
-      .footer {
-        background-color: #cfcece;
-        color: #1b1b1b;
-        padding-top: 10px;
-        padding-bottom: 10px;
-  
-        position: relative;
-        bottom: 0;
-        width: 100%;
-      }
-  
-      
+.visitor-count {
+  display: flex;
+  align-items: center;
+}
+
+.visitor-count i {
+  margin-right: 5px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons i {
+  margin-right: 10px;
+}
+
+/* Rounded corners for dropdown button */
+.dropdown-toggle.rounded {
+  border-radius: 20px;
+}
+.dropdown-menu {
+  z-index: 1021; /* Adjust the z-index value as needed */
+}
+
+/* Hide header on mobile */
+@media (max-width: 576px) {
+  .header-container {
+    display: none;
+  }
+}
+
+/* header css end */
+
+/* Custom CSS */
+#whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+
+#whatsapp-icon:hover {
+  transform: scale(1.1);
+}
+
+.nav-link {
+  margin: 0 5px;
+}
+
+.button {
+  margin-top: 10px;
+}
+
+/* navbar/ menu */
+.navbar-brand img {
+  height: 50px;
+}
+
+
+/* intro section start */
+
+#intro{
+  background: rgba(217, 217, 217, 1);
+
+}
+/* #intro div{
+  max-width: 500px;
+} */
+
+/* intro section end */
+
+/* about section  start*/
+.video-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.read-more-btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .video-container {
+    flex-direction: column;
+  }
+}
+
+/* about section  end*/
+
+/* service  card section start */
+#services{
+  background: linear-gradient(180deg, #FFE292 0%, #DFB877 100%);
+
+}
+
+.homecard {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: auto;
+  position: relative;
+  margin-top: 85px;
+  padding: 20px 20px;
+  text-align: center;
+  transition: 340ms ease;
+}
+
+.homecard img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: -13px;
+  height: 97px;
+  width: 97px;
+  left: 50%;
+  background: #ffffff;
+  /* Change to match your icon's background color */
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.homecard h6 {
+  line-height: 20px;
+  padding-top: 30px;
+}
+
+.homecard:hover {
+  transform: scale(1.05);
+  background-color: darkgoldenrod;
+  color: #ffffff;
+  box-shadow: 5px 5px 20px rgba(red 0, green 0, blue 0, alpha 0.6);
+
+}
+
+.Contactcard {
+  box-shadow: 0 4px 8px 0 grey;
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+}
+
+.Contacttitle {
+  color: grey;
+  font-size: 18px;
+}
+
+.Contactcard:hover {
+  transform: scale(1.04);
+  box-shadow: 5px 5px 20px rgba(red 0, green 0, blue 0, alpha 0.6);
+
+}
+
+/* card section end */
+
+.footer {
+  background-color: #cfcece;
+  color: #1b1b1b;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
