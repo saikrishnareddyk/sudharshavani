@@ -54,18 +54,6 @@
 /* header css end */
 
 /* Custom CSS */
-#whatsapp-icon {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-  transition: transform 0.3s ease-in-out;
-}
-
-#whatsapp-icon:hover {
-  transform: scale(1.1);
-}
-
 .nav-link {
   margin: 0 5px;
 }
@@ -212,4 +200,37 @@ height: 30px;
   position: relative;
   bottom: 0;
   width: 100%;
+}
+
+/* Styles for WhatsApp button */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 999;
+  transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+}
+
+/* Styles for Scroll to Top button */
+.scroll-top-button {
+  border-radius: 50%;
+  background-color: whitesmoke;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  cursor: pointer;
+}
+.scroll-top-button img{
+  transform: rotate(272deg);
+
+}
+
+.scroll-top-button.show {
+  display: block;
 }
