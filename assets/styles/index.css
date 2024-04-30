@@ -1,3 +1,9 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 /* header css start */
 /* Custom CSS for header */
 .header-container {
@@ -189,18 +195,22 @@ height: 30px;
 
 }
 
+.figure.Image_services_round img {
+  animation: animName 40s linear infinite !important;
+}
+
 /* card section end */
 
-.footer {
-  background-color: #cfcece;
-  color: #1b1b1b;
-  padding-top: 10px;
-  padding-bottom: 10px;
+/* footer start */
 
-  position: relative;
-  bottom: 0;
-  width: 100%;
+footer .links {
+  background: rgba(255, 230, 161, 1);
+  color: #1b1b1b;
 }
+footer .bottom{
+  background: linear-gradient(180deg, #FEDE18 0%, #FFC82F 100%);
+}
+/* footer end */
 
 /* Styles for WhatsApp button */
 .whatsapp-button {
