@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Sudarshanavani</title>
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Core theme CSS & JS (Bootstrap)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link href="../css/styles.css" rel="stylesheet" />
+    <style>
+        .section-underline {
+            width: 80px;
+            height: 2px;
+            background-color: black;
+            margin-top: 10px;
+        }
+
+        .project-image {
+            height: 180px;
+            font-size: 3rem;
+            background-color: #e0e0e0;
+            text-align: center;
+        }
+
+        .card-body h5 {
+            margin-top: 15px;
+        }
+
+        .card-text {
+            color: #666;
+        }
+
+        .btn-dark span {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+         
+    <!-- Header -->
+
+    <!-- Header start -->
+    <header id="Header">
+        <!-- Pre-Header -->
+        <div class="pre-header">
+            <div class="ph-contact-info">
+                <div class="ph-mail-info">
+                    <img src="../assets/icons/svg_icons/email_icn.svg" alt="SVG icon">
+                    <a href="mailto:sridattareddy13@gmail.com">support@sudarshanavani.com</a>
+                </div>
+                <div class="ph-mobile-info">
+                    <img src="../assets/icons/svg_icons/call_icn.svg" alt="SVG icon">
+                    <p>+91 70933 34559 | 70933 34669</p>
+                </div>
+            </div>
+
+            <div class="ph-col-right">
+                <div class="ph-visitor-count">
+                    <!-- <img src="assets/icons/svg_icons/visitor.svg" alt="SVG icon" class="globe_svg">
+                <p class="ph-visitor-num-count">10000</p> -->
+
+                    <div class="counter">
+                        <img src="https://hitwebcounter.com/counter/counter.php?page=13033909&style=0006&nbdigits=6&type=ip&initCount=0"
+                            title="Counter Widget" Alt="Visit counter For Websites" /></a>
+                    </div>
+                </div>
+
+                <div class="ph-social-links">
+                    <a href="javascript:window.open(YOUTUBE_URL);">
+                        <img src="../assets/icons/svg_icons/youtube.svg" alt="SVG icon">
+                    </a>
+                    <a href="javascript:window.open(FACEBOOK_URL);">
+                        <img src="../assets/icons/svg_icons/facebook.svg" alt="SVG icon">
+                    </a>
+                    <a href="javascript:window.open(INSTAGRAM_URL);">
+                        <img src="../assets/icons/svg_icons/instagram.svg" alt="SVG icon">
+                    </a>
+                </div>
+                <div onclick=toggleLanguageDropdown() class="lang-dropdown">
+                    <img src="../assets/icons/svg_icons/globe.svg" alt="SVG icon" class="globe_svg">
+                    <p>Language</p>
+                    <img src="../assets/icons/svg_icons/caret_down.svg" alt="SVG icon" class="caret_down_svg">
+
+                    <div class="lang-dropdown-menu">
+                        <ul>
+                            <li><a onclick=toggleLanguageDropdown() href="">Telugu</a></li>
+                            <li><a onclick=toggleLanguageDropdown() href="">English</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="nav-logo">
+                <a href="#">
+                    <img src="../images/logo/sv_full_logo_.png" alt="Sudarshanavani_Logo" class="nav-logo-img">
+                </a>
+            </div>
+
+            <div class="menu-links">
+                <ul>
+                    <li><a href="../index.html" class="">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li>
+                        <a href="../index.html#Services">Services</a>
+                    </li>
+                    <li>
+                        <a href="../index.html#Gallery">Gallery</a>
+                        <img src="../assets/icons/svg_icons/caret_down_black.svg" alt="">
+                        <ul class="gallery-dropdown">
+                            <li><a href="imageGallery.html">Image Gallery</a></li>
+                            <li><a href="videoGallery.html">Video Gallery</a></li>
+                            <li><a href="../index.html#Videos">Trending Videos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="../index.html#Contact">Get In Touch</a></li>
+                </ul>
+                <a href="appointment.html" class="nav-cta-btn">Book Appointment</a>
+            </div>
+
+            <div onclick=showSidenav() class="nav-toggle-btn">
+                <img src="../assets/icons/svg_icons/hamburger_icn.svg" alt="SVG icon">
+            </div>
+        </div>
+
+        <!-- Responsive Navbar -->
+        <div class="responsive-nav">
+            <div onclick=hideSidenav() class="resp-nav-close-icn">
+                <img src="../assets/icons/svg_icons/close_icn.svg" alt="SVG icon">
+            </div>
+            <ul class="resp-nav-links">
+                <li><a onclick=hideSidenav() href="../index.html" class="active">Home</a></li>
+                <li><a onclick=hideSidenav() href="aboutus.html">About</a></li>
+                <li>
+                    <a onclick=hideSidenav() href="../index.html#Services">Services</a>
+                </li>
+                <li>
+                    <a onclick=hideSidenav() href="../index.html#Gallery">Gallery</a>
+                    <img src="../assets/icons/svg_icons/caret_down_black.svg" alt="">
+                    <ul class="resp-gallery-dropdown">
+                        <li><a onclick=hideSidenav() href="imageGallery.html">Image Gallery</a></li>
+                        <li><a onclick=hideSidenav() href="videoGallery.html">Video Gallery</a></li>
+                        <li><a onclick=hideSidenav() href="../index.html#Videos">Trending Videos</a></li>
+                    </ul>
+                </li>
+                <li><a onclick=hideSidenav() href="projects.html">Projects</a></li>
+                <li><a onclick=hideSidenav() href="../index.html">Get In Touch</a></li>
+            </ul>
+            <a href="./appointment.html" class="resp-nav-cta-btn">Book Appointment</a>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- Page Title -->
+    <div class="page-title-container">
+        <p>Our Projects</p>
+        <span class="text-separator"></span>
+    </div>
+
+    <section class="projects-section py-5 container">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card project-card h-100">
+                        <div class="project-image bg-light d-flex align-items-center justify-content-center">
+                            <span class="display-1">🖼️</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Project Title</h5>
+                            <p class="card-text">Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean
+                                eu leo quam. Pellentesque ornare sem lacinia quam venenatis.</p>
+                            <a href="projectDetails.html" class="btn btn-dark">View Details <span>→</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card h-100">
+                        <div class="project-image bg-light d-flex align-items-center justify-content-center">
+                            <span class="display-1">🖼️</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Project Title</h5>
+                            <p class="card-text">Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean
+                                eu leo quam. Pellentesque ornare sem lacinia quam venenatis.</p>
+                            <a onclick="window.open('https://youtu.be/eoHShoI9iIs?si=juaizuHmuolySK5W', '_blank')" class="btn btn-dark">View Details <span>→</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card h-100">
+                        <div class="project-image bg-light d-flex align-items-center justify-content-center">
+                            <span class="display-1">🖼️</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Project Title</h5>
+                            <p class="card-text">Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean
+                                eu leo quam. Pellentesque ornare sem lacinia quam venenatis.</p>
+                                <a onclick="window.open('https://youtu.be/eoHShoI9iIs?si=juaizuHmuolySK5W', '_blank')" class="btn btn-dark">View Details <span>→</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer  start-->
+    <footer id="Footer">
+        <div class="pre-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="logo-col col-sm-6 col-md-6 col-lg-3">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="../images/logo/sv_full_logo_.png" alt="Sudarshanavani_Logo"
+                                    class="nav-logo-img">
+                            </a>
+                        </div>
+                        <!-- not working to do -->
+                        <div class="pf-visitor-count">
+                            <!-- <img src="assets/icons/svg_icons/visitor_black.svg" alt="SVG icon" class="">
+                                <p class="pf-visitor-num-count">10000</p> -->
+                            <div class="counter">
+                                <img src="https://hitwebcounter.com/counter/counter.php?page=13033909&style=0006&nbdigits=6&type=ip&initCount=0"
+                                    title="Counter Widget" Alt="Visit counter For Websites" /></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quick-links col-sm-6 col-md-6 col-lg-3">
+                        <p class="pf-col-title semibold">
+                            QUICK LINKS
+                        </p>
+                        <ul>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="imageGallery.html">Gallery</a></li>
+                        </ul>
+                        <div class="sv-rounded-btn">
+                            <a href="appointment.html">Book Appointment</a>
+                            <img src="assets/icons/svg_icons/caret_right_black.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="browse-by col-sm-6 col-md-6 col-lg-3">
+                        <p class="pf-col-title semibold">
+                            BROWSE BY CONTENT
+                        </p>
+                        <ul>
+                            <li><a href="appointment.html">Live Visits Schedule</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="follow-us col-sm-6 col-md-6 col-lg-3">
+                        <p class="pf-col-title semibold">
+                            FOLLOW US ON
+                        </p>
+                        <div class="pf-social-links">
+                            <div class="pf-sl-yt">
+                                <img src="../assets/icons/svg_icons/youtube_black.svg" alt="">
+                                <a href="javascript:window.open(YOUTUBE_URL);">Youtube</a>
+                            </div>
+                            <div class="pf-sl-fb">
+                                <img src="../assets/icons/svg_icons/facebook_black.svg" alt="">
+                                <a href="javascript:window.open(FACEBOOK_URL);">Facebook</a>
+                            </div>
+                            <div class="pf-sl-i">
+                                <img src="../assets/icons/svg_icons/instagram_black.svg" alt="">
+                                <a href="javascript:window.open(INSTAGRAM_URL);">Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <!-- <p>Copyright © 2024 Sudarshanavani</p> -->
+            <p>Copyright © 2024 Sudarshanavani</p>
+        </div>
+    </footer>
+
+    <!-- Chat on WhatsApp Float Button -->
+    <a href="javascript:window.open(WA_URL);" class="chat-on-wa">
+        <img src="../assets/icons/svg_icons/whatsapp_logo.svg" alt="">
+    </a>
+
+    <!-- Scroll To Top Float Button -->
+    <div class="scroll-to-top">
+        <a href="#">
+            <img src="../assets/icons/svg_icons/caret_up.svg" alt="" class="scroll_to_top_caret_up_svg">
+        </a>
+    </div>
+
+    <!-- Footer  end-->
+       <!-- AJAX Form Submission for GetInTouch -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+        <!-- Load Scripts -->
+        <script src="../js/index.js"></script>
+        <script src="../js/contants.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Sudarshanavani</title>
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Core theme CSS & JS (Bootstrap)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link href="../css/styles.css" rel="stylesheet" />
+
+    <style>
+        .main-section {
+            max-width: 1200px;
+            padding: 5rem 2rem;
+            margin: 0 auto;
+        }
+
+        .sub-section {
+            padding: 2rem 0;
+        }
+
+        .heading p {
+            font-size: 20px;
+            font-weight: 500;
+            color: var(--primary-blue);
+        }
+
+        .underline {
+            display: block;
+            height: 2px;
+            width: 45px;
+            background-color: var(--primary-blue);
+            margin-top: 10px;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Who Am I */
+        .who-am-i .body {
+            display: flex;
+            flex-direction: row;
+            /* align-items: center; */
+            justify-content: center;
+            /* flex-wrap: wrap; */
+            gap: 4rem;
+        }
+
+        .who-am-i img {
+            /* to remove later */
+            /* height: 300px; */
+            /* min-width: 300px; */
+            border-radius: 12px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+            background: var(--primary-gray);
+        }
+
+        .who-am-i .content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            text-align: justify;
+        }
+
+        .who-am-i .title-text {
+            font-size: 20px;
+            font-weight: 500;
+            color: var(--primary-blue);
+            padding-bottom: .5rem;
+        }
+
+        /* Personal Details */
+        .personal-details .heading {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .pd-row {
+            padding-bottom: 1rem;
+        }
+
+        .pd-key {
+            color: var(--primary-blue);
+            font-weight: 300;
+        }
+
+        .pd-value {
+            font-weight: 500;
+        }
+
+        /* Achievements */
+        .pd-achivements {
+            display: flex;
+            gap: 10rem;
+            flex-direction: row;
+            /* align-items: center; */
+            /* justify-content: center; */
+            flex-wrap: wrap;
+        }
+
+        .achievements {
+            background: var(--primary-gray);
+            /* background: lightgrey; */
+            padding: 1rem .5rem;
+            border-radius: 24px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .achievements .heading {
+            padding-bottom: 1rem;
+        }
+
+        .achievements .body {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            /* justify-content: center; */
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .achievements .body p {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .achievement-card {
+            height: 340px;
+            /* width: 300px; */
+            /* max-width: 300px; */
+            min-width: 260px;
+            /* background: lightgrey; */
+            background: linear-gradient(120deg,
+                    var(--gold-color-one),
+                    var(--gold-color-two));
+            padding-bottom: .5rem;
+            border-radius: 12px;
+            transition: .3s ease;
+        }
+
+        .achievement-card img {
+            height: 180px;
+            width: 100%;
+            border-radius: 12px;
+            background: var(--primary-gray);
+        }
+
+        /* Vastu Guru */
+        .vastu-guru .body {
+            text-align: justify;
+        }
+
+        /* Specilaity */
+        .speciality .body {
+            text-align: justify;
+        }
+
+
+
+        .aired-on .body {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .aired-on .row-1,
+        .aired-on .row-2 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .aired-on .aired-on-card {
+            flex: 1 1 calc(25% - 1rem);
+            /* Adjust width to fit 4 items with 1rem gap */
+            box-sizing: border-box;
+        }
+
+        .aired-on .aired-on-card img.thumbnail {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            background: var(--primary-gray);
+        }
+
+        .aired-on .aired-on-card img.channel_logo {
+            width: 100px;
+            height: 100px;
+            margin-top: 0.5rem;
+        }
+        .custom_channel_Logo{
+            width: 200px;
+            height: 100px;
+            margin-top: 0.5rem;
+
+        }
+
+        .aired-on .row-3 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .aired-on .row-3 img.thumbnail {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            background: var(--primary-gray);
+        }
+
+        .aired-on .row-3 .content {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .aired-on .title-text {
+            font-size: 20px;
+            font-weight: 500;
+            color: var(--primary-blue);
+        }
+
+        /* Media query for medium screens */
+        @media (max-width: 992px) {
+            .aired-on .aired-on-card {
+                flex: 1 1 calc(50% - 1rem);
+                /* Adjust width to fit 2 items with 1rem gap */
+            }
+        }
+
+        /* Media query for small screens */
+        @media (max-width: 768px) {
+            .aired-on .aired-on-card {
+                flex: 1 1 100%;
+                /* Adjust width to fit 1 item */
+            }
+        }
+
+
+        /* Media queries */
+        /* Who Am I */
+        @media (max-width: 768px) {
+            .who-am-i .body {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        /* Achievements */
+        @media (max-width: 1115px) {
+            .pd-achivements {
+                gap: 4rem;
+                transition: .3s ease;
+            }
+        }
+
+        @media (max-width: 1020px) {
+            .pd-achivements {
+                gap: 2rem;
+                transition: .3s ease;
+            }
+        }
+
+        @media (max-width: 990px) {
+            .pd-achivements {
+                gap: 1rem;
+                transition: .3s ease;
+            }
+        }
+
+        @media (max-width: 970px) {
+            .personal-details .heading {
+                padding-top: 0rem;
+                transition: .3s ease;
+            }
+
+            .pd-achivements {
+                gap: 1rem;
+                /* align-items: center; */
+                /* justify-content: center; */
+            }
+
+            .achivements .body {
+                /* gap: 1rem; */
+                /* align-items: center; */
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 666px) {
+            .achievement-card {
+                width: 100%;
+                transition: .3s ease;
+            }
+        }
+
+        @media (max-width: 425px) {
+            .achievement-card {
+                width: 100%;
+                transition: .3s ease;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <!-- Header start -->
+    <header id="Header">
+        <!-- Pre-Header -->
+        <div class="pre-header">
+            <div class="ph-contact-info">
+                <div class="ph-mail-info">
+                    <img src="../assets/icons/svg_icons/email_icn.svg" alt="SVG icon">
+                    <a href="mailto:sridattareddy13@gmail.com">support@sudarshanavani.com</a>
+                </div>
+                <div class="ph-mobile-info">
+                    <img src="../assets/icons/svg_icons/call_icn.svg" alt="SVG icon">
+                    <p>+91 70933 34559 | 70933 34669</p>
+                </div>
+            </div>
+
+            <div class="ph-col-right">
+                <div class="ph-visitor-count">
+                    <!-- <img src="assets/icons/svg_icons/visitor.svg" alt="SVG icon" class="globe_svg">
+                <p class="ph-visitor-num-count">10000</p> -->
+
+                    <div class="counter">
+                        <img src="https://hitwebcounter.com/counter/counter.php?page=13033909&style=0006&nbdigits=6&type=ip&initCount=0"
+                            title="Counter Widget" Alt="Visit counter For Websites" /></a>
+                    </div>
+                </div>
+
+                <div class="ph-social-links">
+                    <a href="javascript:window.open(YOUTUBE_URL);">
+                        <img src="../assets/icons/svg_icons/youtube.svg" alt="SVG icon">
+                    </a>
+                    <a href="javascript:window.open(FACEBOOK_URL);">
+                        <img src="../assets/icons/svg_icons/facebook.svg" alt="SVG icon">
+                    </a>
+                    <a href="javascript:window.open(INSTAGRAM_URL);">
+                        <img src="../assets/icons/svg_icons/instagram.svg" alt="SVG icon">
+                    </a>
+                </div>
+                <div onclick=toggleLanguageDropdown() class="lang-dropdown">
+                    <img src="../assets/icons/svg_icons/globe.svg" alt="SVG icon" class="globe_svg">
+                    <p>Language</p>
+                    <img src="../assets/icons/svg_icons/caret_down.svg" alt="SVG icon" class="caret_down_svg">
+
+                    <div class="lang-dropdown-menu">
+                        <ul>
+                            <li><a onclick=toggleLanguageDropdown() href="">Telugu</a></li>
+                            <li><a onclick=toggleLanguageDropdown() href="">English</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <img src="../images/logo/sv_full_logo_.png" alt="Sudarshanavani_Logo" class="nav-logo-img">
+                </a>
+            </div>
+
+            <div class="menu-links">
+                <ul>
+                    <li><a href="../index.html" class="">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li>
+                        <a href="../index.html#Services">Services</a>
+                    </li>
+                    <li>
+                        <a href="../index.html#Gallery">Gallery</a>
+                        <img src="../assets/icons/svg_icons/caret_down_black.svg" alt="">
+                        <ul class="gallery-dropdown">
+                            <li><a href="imageGallery.html">Image Gallery</a></li>
+                            <li><a href="videoGallery.html">Video Gallery</a></li>
+                            <li><a href="../index.html#Videos">Trending Videos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="../index.html#Contact">Get In Touch</a></li>
+                </ul>
+                <a href="appointment.html" class="nav-cta-btn">Book Appointment</a>
+            </div>
+
+            <div onclick=showSidenav() class="nav-toggle-btn">
+                <img src="../assets/icons/svg_icons/hamburger_icn.svg" alt="SVG icon">
+            </div>
+        </div>
+
+        <!-- Responsive Navbar -->
+        <div class="responsive-nav">
+            <div onclick=hideSidenav() class="resp-nav-close-icn">
+                <img src="../assets/icons/svg_icons/close_icn.svg" alt="SVG icon">
+            </div>
+            <ul class="resp-nav-links">
+                <li><a onclick=hideSidenav() href="../index.html" class="active">Home</a></li>
+                <li><a onclick=hideSidenav() href="aboutus.html">About</a></li>
+                <li>
+                    <a onclick=hideSidenav() href="../index.html#Services">Services</a>
+                </li>
+                <li>
+                    <a onclick=hideSidenav() href="../index.html#Gallery">Gallery</a>
+                    <img src="../assets/icons/svg_icons/caret_down_black.svg" alt="">
+                    <ul class="resp-gallery-dropdown">
+                        <li><a onclick=hideSidenav() href="imageGallery.html">Image Gallery</a></li>
+                        <li><a onclick=hideSidenav() href="videoGallery.html">Video Gallery</a></li>
+                        <li><a onclick=hideSidenav() href="../index.html#Videos">Trending Videos</a></li>
+                    </ul>
+                </li>
+                <li><a onclick=hideSidenav() href="projects.html">Projects</a></li>
+                <li><a onclick=hideSidenav() href="#Contact">Get In Touch</a></li>
+            </ul>
+            <a href="appointment.html" class="resp-nav-cta-btn">Book Appointment</a>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- Page Title -->
+    <div class="page-title-container">
+        <p>About Us</p>
+        <span class="text-separator"></span>
+    </div>
+
+    <section id="AboutUs" class="main-section">
+        <div class="sub-section who-am-i">
+            <div class="heading">
+                <p>Sudarshanavani</p>
+                <span class="underline"></span>
+            </div>
+
+            <div class="body">
+                <div class="">
+                    <img src="../images/about/DSC_0024.JPG" alt="Guruvu garu" class="img-fluid">
+                </div>
+
+                <div class="content">
+                    <p>
+                        &nbsp; &nbsp; &nbsp; I, Gudimella Lakshmi Nirajan Swamy, a Heriditary Vastu Pandit, offer expert
+                        Vastu consultations, following precise compass directions with degrees orientation, right at
+                        your doorstep. With over 24 years of experience, we serve both locally and internationally by
+                        phone or in person. We specialize in creating customized plans for homes, businesses, spiritual
+                        spaces, and schools.
+                    </p>
+                    <p>
+                        Services we provide are easy to access and understand, ensuring the best results for creating
+                        harmonious living spaces with health and positive vibrations.
+                    </p>
+
+                    <div class="vision">
+                        <p class="title-text">My Vision:</p>
+                        <p>
+                            To excel as a proficient planner and advisor in crafting Vastu-compliant homes, ensuring a
+                            better quality of life for all.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-section pd-achivements">
+            <div class="personal-details">
+                <div class="heading">
+                    <p>Personal Details</p>
+                </div>
+
+                <div class="body">
+                    <div class="pd-row">
+                        <p class="pd-key">Fullname:</p>
+                        <p class="pd-value">Gudimella Lakshmi Niranjan Swamy</p>
+                    </div>
+                    <div class="pd-row">
+                        <p class="pd-key">Origin:</p>
+                        <p class="pd-value">Bapatla, Guntur, AP - India</p>
+                    </div>
+                    <div class="pd-row">
+                        <p class="pd-key">Profession:</p>
+                        <p class="pd-value">Hereditary Vastu Pandit (3rd Gen.)</p>
+                    </div>
+                    <div class="pd-row">
+                        <p class="pd-key">Experience:</p>
+                        <p class="pd-value">June 2000 - Present</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="achievements">
+                <div class="heading">
+                    <p>Achievements</p>
+                </div>
+
+                <div class="body">
+                    <div class="achievement-card">
+                        <img src="../images/about/vastu ratna 2.jpg" alt="">
+                        <p>
+                            <span class="semibold">" VASTU RATNA "</span> <br>
+                            by <br>
+                            <span class="semibold">Sir. C.V.Raman Foundation</span> <br>
+                            in the year <br>
+                            <span class="semibold">2016</span>
+                        </p>
+                    </div>
+                    <div class="achievement-card">
+                        <img src="../images//about/2023- Vastu Vibhushan.jpg" alt="">
+                        <p>
+                            <span class="semibold">" VASTU VIBHUSHAN "</span> <br>
+                            by <br>
+                            <span class="semibold">SUMAN Arts</span> <br>
+                            in the year <br>
+                            <span class="semibold">2023</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-section vastu-guru">
+            <div class="heading">
+                <p>My Vastu Guru</p>
+                <span class="underline"></span>
+            </div>
+
+            <div class="body">
+                <p>
+                    My father, G. Lakshmi Narasimha Swamy, dedicated 45 years of his life to serving people by providing
+                    Vastu Sastra guidance for constructing homes that foster confidence and harmony within society. His
+                    expertise, passed down through generations in our hometown Alakapuram near Bapatla, Andhra Pradesh,
+                    has empowered countless individuals to live in balanced environments.
+                </p>
+                <br>
+                <p>
+                    I am honored to be a disciple of <span class="semibold">Sri Tridandi Sreemannarayana Chinna Jeeyar
+                        Swami ji</span>, who gave me the sacred mantra for invoking divine grace. Under his guidance, I
+                    received the blessed name ' Sudarshanavani ', signifying the path to enlightenment and spiritual
+                    clarity."
+                </p>
+            </div>
+        </div>
+
+        <div class="sub-section speciality">
+            <div class="heading">
+                <p>My Speciality</p>
+                <span class="underline"></span>
+            </div>
+
+            <div class="body">
+                <p>
+                    Coupling our expertise in Vastu principles with modern technology, we meticulously design house
+                    plans tailored to your specific needs. From initial degree analysis to final AUTOCAD 2D DRAWINGS,
+                    our team ensures every detail aligns with Vastu guidelines, promoting harmony and positivity in your
+                    living space.
+                </p>
+                <br>
+                <p>
+                    Furthermore, our engineering team, led by my son, specializes in crafting comprehensive STRUCTURAL
+                    plans. Using advanced computerized tools, we guarantee structural integrity and safety, bringing
+                    peace of mind to our valued customers throughout the construction process.
+                </p>
+            </div>
+        </div>
+
+        <div class="sub-section aired-on">
+            <div class="heading">
+                <p>Sudarshanavani Aired On</p>
+                <span class="underline"></span>
+            </div>
+
+            <div class="body">
+                <div class="row-1">
+                    <div class="aired-on-card">
+                        <img src="../images/about/default.png" alt="" class="thumbnail">
+                        <div class="text-center">
+                            <img  src="../images/channel_logos/txpress_tv.jpg" alt="express_tv" class="custom_channel_Logo">
+                        </div>
+                    </div>
+                    <div class="aired-on-card">
+                        <img src="../images/about/TORI Radio -programme.jpg" alt="" class="thumbnail">
+                        <h6>First global radio program to create the awareness on VASTU</h6>
+                        <div class="text-center">
+                            <img src="../images/channel_logos/tori_logo.png" alt="tori_logo" class="channel_logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="row-2">
+                    <div class="aired-on-card">
+                        <img src="../images/about/default.png" alt="" class="thumbnail">
+                        <div class="text-center">
+                            <img src="../images/channel_logos/pooja_tv.webp" alt="pooja_tv" class="channel_logo">
+                        </div>
+                    </div>
+                    <div class="aired-on-card">
+                        <img src="../images/about/default.png" alt="" class="thumbnail">
+                        <div class="text-center">
+                            <img src="../images/channel_logos/cvr_om.webp" alt="cvr_om" class="custom_channel_Logo">
+                        </div>
+                    </div>
+                    <div class="aired-on-card">
+                        <img src="../images/about/default.png" alt="" class="thumbnail">
+                        <div class="text-center">
+                            <img src="../images/channel_logos/bhakti_tv.jpg" alt="bhakti_tv" class="custom_channel_Logo">
+                        </div>
+                    </div>
+                    <div class="aired-on-card">
+                        <img src="../images/about/default.png" alt="" class="thumbnail">
+                        <div class="text-center">
+                            <img src="../images/channel_logos/hindhudharmam.png" alt="hindhudharmam"
+                                class="custom_channel_Logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="row-3">
+                    <img src="../images/about/youtube.jpg" alt="youtube" class="thumbnail">
+
+                    <div class="content">
+                        <p class="title-text semibold">
+                            Sudarshanavani Paripoorna Vastu <span class="regular">on</span> YouTube
+                        </p>
+                        <p>
+                            Started YouTube channel in the year 2017 with a goal of creating harmonious living spaces
+                            with positive vibrations according to orientation of degrees on compass.
+                        </p>
+                        <br>
+                        <p>
+                            With over 2800+ videos on YouTube, we have also started Live Program for customers all over
+                            the world to provide live consultation and raise awareness in vastu.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer  start-->
+    <footer id="Footer">
+        <div class="pre-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="logo-col col-sm-6 col-md-6 col-lg-3">
+                        <div class="logo">
+                            <a href="../index.html">
+                                <img src="../images/logo/sv_full_logo_.png" alt="Sudarshanavani_Logo"
+                                    class="nav-logo-img">
+                            </a>
+                        </div>
+                        <!-- not working to do -->
+                        <div class="pf-visitor-count">
+                            <!-- <img src="assets/icons/svg_icons/visitor_black.svg" alt="SVG icon" class="">
+                            <p class="pf-visitor-num-count">10000</p> -->
+                            <div class="counter">
+                                <img src="https://hitwebcounter.com/counter/counter.php?page=13033909&style=0006&nbdigits=6&type=ip&initCount=0"
+                                    title="Counter Widget" Alt="Visit counter For Websites" /></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quick-links col-sm-6 col-md-6 col-lg-3">
+                        <p class="pf-col-title semibold">
+                            QUICK LINKS
+                        </p>
+                        <ul>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="imageGallery.html">Gallery</a></li>
+                        </ul>
+                        <div class="sv-rounded-btn">
+                            <a href="appointment.html">Book Appointment</a>
+                            <img src="assets/icons/svg_icons/caret_right_black.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="browse-by col-sm-6 col-md-6 col-lg-3">
+                        <p class="pf-col-title semibold">
+                            BROWSE BY CONTENT
+                        </p>
+                        <ul>
+                            <li><a href="appointment.html">Live Visits Schedule</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="follow-us col-sm-6 col-md-6 col-lg-3">
+                        <p class="pf-col-title semibold">
+                            FOLLOW US ON
+                        </p>
+                        <div class="pf-social-links">
+                            <div class="pf-sl-yt">
+                                <img src="assets/icons/svg_icons/youtube_black.svg" alt="">
+                                <a href="javascript:window.open(YOUTUBE_URL);">Youtube</a>
+                            </div>
+                            <div class="pf-sl-fb">
+                                <img src="assets/icons/svg_icons/facebook_black.svg" alt="">
+                                <a href="javascript:window.open(FACEBOOK_URL);">Facebook</a>
+                            </div>
+                            <div class="pf-sl-i">
+                                <img src="assets/icons/svg_icons/instagram_black.svg" alt="">
+                                <a href="javascript:window.open(INSTAGRAM_URL);">Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <!-- <p>Copyright © 2024 Sudarshanavani</p> -->
+            <p>Copyright © 2024 Sudarshanavani</p>
+        </div>
+    </footer>
+
+    <!-- Chat on WhatsApp Float Button -->
+    <a href="javascript:window.open(WA_URL);" class="chat-on-wa">
+        <img src="../assets/icons/svg_icons/whatsapp_logo.svg" alt="">
+    </a>
+
+    <!-- Scroll To Top Float Button -->
+    <div class="scroll-to-top">
+        <a href="#">
+            <img src="../assets/icons/svg_icons/caret_up.svg" alt="" class="scroll_to_top_caret_up_svg">
+        </a>
+    </div>
+
+    <!-- Footer  end-->
+
+    <!-- AJAX Form Submission for GetInTouch -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Load Scripts -->
+    <script src="../js/index.js"></script>
+    <script src="../js/contants.js"></script>
+
+
+</body>
+
+</html>

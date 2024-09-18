@@ -2,325 +2,628 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sudarshanavani Paripoorna Vastu</title>
-  <!-- Include Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/styles/index.css">
-  <style>
-    /* Additional custom styles can go here */
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="" />
+
+    <title>Sudarshanavani : Home</title>
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Core theme CSS & JS (Bootstrap)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
 
-<body>
-  <!-- header section start -->
-  <header>
-    <div class="header-container">
-      <!-- Left side: Mail icon and contact info -->
-      <div class="contact-info">
-        <span>
-          <img src="./assets/svgs/Landing Page/mail.svg" alt="Mail svg">
-          <!-- <a href="mailto:some@gmail.com">some@gmail.com</a> -->
-          <span>some@gmail.com </span>
-        </span>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="10">
 
-        <span>
-          <img src="./assets/svgs/Landing Page/whatsapp.svg" alt="Mail svg">
-          <span>951611616 | 5115615151</span>
-        </span>
+    <!-- Header -->
 
-      </div>
-      <!-- Right side: Visitor count  -->
-      <!-- social icons  -->
-      <div class="visitor-count">
-        <span>Visitor count: XXXX</span>
-      </div>
-
-      <div class="social-icons">
-        <!-- <a href=""> <img src="./assets/svgs/Landing Page/Youtube.svg" alt="Youtube logo" ></a> -->
-        <a href=""> <img src="./assets/images/Youtube.png" alt="Youtube logo"></a>
-        <a href=""> <img src="./assets/svgs/Landing Page/Instagram.svg" alt="Instagram logo"></a>
-        <a href=""> <img src="./assets/svgs/Landing Page/Facebook.svg" alt="Facebook logo"></a>
-      </div>
-      <!-- Language change dropdown -->
-      <div class="dropdown">
-        <button class="btn btn-outline-light dropdown-toggle rounded-pill" type="button" id="dropdownMenuButton"
-          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Language
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">English</a>
-          <a class="dropdown-item" href="#">Telugu</a>
-          <a class="dropdown-item" href="#">Hindi</a>
-          <a class="dropdown-item" href="#">Kannada</a>
-          <!-- Add more language options here -->
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- header section end -->
-  <!-- menu section start -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <a class="navbar-brand" href="#">
-      <img src="./assets/images/logo/Group 19.png" class="d-inline-block align-top" alt="Logo">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#intro">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#services">Services</a>
-        </li>
-        <!-- More nav items -->
-        <li class="nav-item">
-          <a class="nav-link" href="#gallery">Gallery</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Feedback</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="btn btn-bookappointment text-dark rounded-pill" href="#">Book Appointment</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- menu section end -->
-  <div class="container-fluid text-center p-5" id="intro">
-    <div>
-      <h1>Sudarshanavani</h1>
-      <h3>Paripoorna Vastu</h3>
-      <div>Hereditary Vastu Pandit</div>
-
-      <p class="lead">Compass Degrees Orientation</p>
-      <p>Led by the experienced </p>
-      <p><b>"VASTU RATNA", "VASTU VIBUSHAN"</b></p>
-      <p>Sri. <b>Gudimella Lakshmi Niranjan Swamy</b> offers expert
-        guidance on Vastu Shastra, the ancient Indian traditional system for creating harmonious living spaces with
-        positive
-        vibrations.</p>
-
-      <a class="btn btn-outline-light rounded-pill m-2" id="getInTouch" href="#" role="button"> <img
-          src="./assets/images/whatsapp.png" alt=""> Get In Touch</a>
-      <a class="btn btn-outline-dark rounded-pill" id="visitMyChannel" href="#" role="button"><img
-          src="./assets/svgs/Landing Page/youtube-circle-logo_svgrepo.com.svg" alt=""> Visit My Channel </a>
-    </div>
-  </div>
-
-
-  <!-- about sudharshanvani -->
-  <div class="container mt-5 p-5  " id="about">
-    <h2 class="text-center">Sudarshanavani</h2>
-    <div class="row">
-      <div class="col-md-6">
-        <img src="./assets/svgs/Landing Page/Vastu Chakra.svg" class="img-fluid" alt="Vastu chakra">
-      </div>
-      <div class="col-md-6 content">
-        <p>
-          We offer expert Vastu consultations, following precise compass directions, right at your doorstep. With 24
-          years of
-          experience, we serve both locally and internationally by phone or in person. We specialize in creating
-          customized
-          plans for homes, businesses, spiritual spaces, and schools. Our services are easy to access and understand,
-          ensuring
-          the best results for you. We travel regularly to Karnataka, Tamil Nadu, Telangana, Andhra Pradesh, Orissa, and
-          Yanam
-          to assist our clients.
-
-        </p>
-        <h5>For a better life, consult with Sudarshanavani.</h5>
-
-        <div class="read-more-btn">
-          <a class="btn btn-outline-dark rounded-pill" href="#" role="button">Know More</a>
-        </div>
-
-
-      </div>
-    </div>
-  </div>
-
-  <!-- services section cards -->
-
-  <div class="container-fluid mt-5 p-5  " id="services">
-    <h2 class="text-center">Services Offered</h2>
-    <div class="row ">
-      <div class="card-deck col-12 ">
-        <div class="card homecard">
-          <img src="assets/images/compass-logo.png" alt=" compass-logo png">
-          <h6>New House Planning</h6>
-        </div>
-
-        <div class="card homecard">
-          <img src="assets/images/compass-logo.png" alt=" compass-logo png">
-          <h6>Factory Planning</h6>
-        </div>
-
-        <div class="card homecard">
-          <img src="assets/images/compass-logo.png" alt=" compass-logo png">
-          <h6>Layout Plan</h6>
-        </div>
-        <div class="card homecard">
-          <img src="assets/images/compass-logo.png" alt=" compass-logo png">
-          <h6>Apartment Plan</h6>
-        </div>
-
-
-
-      </div>
-      <div class="card-deck col-12 ">
-        <div class="card homecard">
-          <img src="assets/images/compass-logo.png" alt=" compass-logo png">
-          <h6>Overseas Services (USA)</h6>
-        </div>
-
-        <div class="card homecard">
-          <img src="assets/images/compass-logo.png" alt=" compass-logo png">
-          <h6>Engineering Services</h6>
-        </div>
-
-        <div class="card homecard">
-          <img src="assets/images/compass-logo.png" alt=" compass-logo png">
-          <h6>Plan Modification</h6>
-        </div>
-
-        <div class="card homecard">
-          <img src="assets/images/compass-logo.png" alt=" compass-logo png">
-          <h6>House Renovation</h6>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <div class="container-fluid mt-5 p-5" id="gallery">
-    <h2 class="text-center">Gallery</h2>
-
-
-  </div>
-
-
-  <div class="container-fluid mt-5 p-5 " id="">
-    <h2 class="text-center">Trending Videos</h2>
-
-  </div>
-
-  <div class="container-fluid mt-5 p-5  " id="">
-    <h2 class="text-center">Contact Us</h2>
-
-  </div>
-
-
-
-
-  <footer class="footer text-center">
-    <div class="links">
-      <div class="container">
-       <div class="row">
-          <div class="col-lg-3 col-sm-12 text-center">
-            <img src="./assets/images/logo/Group 22.png" width="200px" alt="" class="img-responsive">
-
-            <div>
-              Visitor count
+    <!-- Header start -->
+    <header id="Header">
+        <!-- Pre-Header -->
+        <div class="pre-header">
+            <div class="ph-contact-info">
+                <div class="ph-mail-info">
+                    <img src="../assets/icons/svg_icons/email_icn.svg" alt="SVG icon" loading="lazy">
+                    <a href="mailto:sridattareddy13@gmail.com">support@sudarshanavani.com</a>
+                </div>
+                <div class="ph-mobile-info">
+                    <img src="../assets/icons/svg_icons/call_icn.svg" alt="SVG icon" loading="lazy">
+                    <p>+91 70933 34559 | 70933 34669</p>
+                </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-sm-12 text-center">
-            <h6>QUICK LINKS </h6>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Projects</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Gallery</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Feedback</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-            </ul>
 
+            <div class="ph-col-right">
+                <div class="ph-visitor-count">
 
-          </div>
-          <div class="col-lg-3 col-sm-12 text-center">
-            <h6>BROWSE BY CONTENT</h6>
+                    <div class="counter">
+                        <img src="https://hitwebcounter.com/counter/counter.php?page=13033909&style=0006&nbdigits=6&type=ip&initCount=0"
+                            title="Counter Widget" Alt="Visit counter For Websites" /></a>
+                    </div>
+                </div>
 
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Videos by Category</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Videos by Vastu Topics</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Live Visits Schedule</a></li>
-            </ul>
+                <div class="ph-social-links">
+                    <a href="javascript:window.open(YOUTUBE_URL);">
+                        <img src="../assets/icons/svg_icons/youtube.svg" alt="SVG icon" loading="lazy">
+                    </a>
+                    <a href="javascript:window.open(FACEBOOK_URL);">
+                        <img src="../assets/icons/svg_icons/facebook.svg" alt="SVG icon" loading="lazy">
+                    </a>
+                    <a href="javascript:window.open(INSTAGRAM_URL);">
+                        <img src="../assets/icons/svg_icons/instagram.svg" alt="SVG icon" loading="lazy">
+                    </a>
+                </div>
+                <div onclick=toggleLanguageDropdown() class="lang-dropdown">
+                    <img src="../assets/icons/svg_icons/globe.svg" alt="SVG icon" class="globe_svg" loading="lazy">
+                    <p>Language</p>
+                    <img src="../assets/icons/svg_icons/caret_down.svg" alt="SVG icon" class="caret_down_svg" loading="lazy">
 
-          </div>
-          <div class="col-lg-3 col-sm-12 text-center">
-            <h6>FOLLOW US ON</h6>
-
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">YouTube</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Facebook</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Instagram</a></li>
-            </ul>
-
-          </div>
+                    <div class="lang-dropdown-menu">
+                        <ul>
+                            <li><a onclick=toggleLanguageDropdown() href="">Telugu</a></li>
+                            <li><a onclick=toggleLanguageDropdown() href="">English</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="nav-logo">
+                <a href="#">
+                    <img src="../images/logo/sv_full_logo_.png" alt="Sudarshanavani_Logo" class="nav-logo-img" loading="lazy">
+                </a>
+            </div>
+
+            <div class="menu-links">
+                <ul>
+                    <li><a href="./index.html" class="">Home</a></li>
+                    <li><a href="./pages/aboutus.html">About</a></li>
+                    <li>
+                        <a href="../index.html#Services">Services</a>
+                    </li>
+                    <li>
+                        <a href="../index.html#Gallery">Gallery</a>
+                        <img src="../assets/icons/svg_icons/caret_down_black.svg" alt="">
+                        <ul class="gallery-dropdown">
+                            <li><a href="pages/imageGallery.html">Image Gallery</a></li>
+                            <li><a href="pages/videoGallery.html">Video Gallery</a></li>
+                            <li><a href="../index.html#Videos">Trending Videos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="pages/projects.html">Projects</a></li>
+                    <li><a href="../index.html#Contact">Get In Touch</a></li>
+                </ul>
+                <a href="./pages/appointment.html" class="nav-cta-btn">Book Appointment</a>
+            </div>
+
+            <div onclick=showSidenav() class="nav-toggle-btn">
+                <img src="./assets/icons/svg_icons/hamburger_icn.svg" alt="SVG icon">
+            </div>
+        </div>
+
+        <!-- Responsive Navbar -->
+        <div class="responsive-nav">
+            <div onclick=hideSidenav() class="resp-nav-close-icn">
+                <img src="../assets/icons/svg_icons/close_icn.svg" alt="SVG icon">
+            </div>
+            <li><a href="pages/videoGallery.html">Video Gallery</a></li>
+            <ul class="resp-nav-links">
+                <li><a onclick=hideSidenav() href="../index.html" class="active">Home</a></li>
+                <li><a onclick=hideSidenav() href="./pages/aboutus.html">About</a></li>
+                <li>
+                    <a onclick=hideSidenav() href="../index.html#Services">Services</a>
+                </li>
+                <li>
+                    <a onclick=hideSidenav() href="../index.html#Gallery">Gallery</a>
+                    <img src="../assets/icons/svg_icons/caret_down_black.svg" alt="">
+                    <ul class="resp-gallery-dropdown">
+                        <li><a onclick=hideSidenav() href="pages/imageGallery.html">Image Gallery</a></li>
+                        <li><a onclick=hideSidenav() href="pages/videoGallery.html">Video Gallery</a></li>
+                        <li><a onclick=hideSidenav() href="../index.html#Videos">Trending Videos</a></li>
+                    </ul>
+                </li>
+                <li><a onclick=hideSidenav() href="pages/projects.html">Projects</a></li>
+                <li><a onclick=hideSidenav() href="#Contact">Get In Touch</a></li>
+            </ul>
+            <a href="pages/appointment.html" class="resp-nav-cta-btn">Book Appointment</a>
+        </div>
+    </header>
+    <!-- header end -->
+
+
+    <!-- Hero Section -->
+    <section id="Home">
+        <!-- <div class="jai-sri"></div> -->
+
+        <div class="hero">
+            <div class="hero-content">
+                <h2 class="hero-title">Sudarshanavani</h2>
+                <h6 class="hero-tagline">Paripoorna Vastu</h6>
+                <span class="text-separator"></span>
+
+                <div class="vastu-pandit">
+                    <img src="assets/icons/svg_icons/compass.svg" alt="" class="whatsapp_logo_svg" loading="lazy">
+                    <p class="semibold">Heriditary Vastu Pandit</p>
+                    <img src="assets/icons/svg_icons/compass.svg" alt="" class="whatsapp_logo_svg" loading="lazy">
+                </div>
+
+                <p class="light">Compass Degrees Orientation</p>
+
+                <br>
+
+                <p class="light">Led by the experienced</p>
+                <!-- <p class="semibold">“ VASTU RATNA ”, “ VASTU VIBUSHAN “</p> -->
+                <p class="light">Sri.<span class="semibold">Gudimella Lakshmi Niranjan Swamy</span> offers expert
+                    guidance
+                    on Vastu Shastra, the ancient Indian traditional system for creating harmonious living spaces with
+                    positive vibrations.
+                </p>
+
+                <div class="hero-cta">
+                    <a href="javascript:window.open(WA_URL);" class="get-in-touch-cta">
+                        <img src="./assets/icons/svg_icons/whatsapp_logo.svg" alt="" class="whatsapp_logo_svg" loading="lazy">
+                        <p>Get In Touch</p>
+                    </a>
+                    <a href="javascript:window.open(YOUTUBE_URL);" class="visit-channel-cta">
+                        <img src="./assets/icons/svg_icons/youtube_logo.svg" alt="" class="youtube_logo_svg" loading="lazy">
+                        <p>Visit My Channel</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="About">
+        <div class="about">
+            <p class="section-title">Sudarshanavani</p>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 d-flex justify-content-center align-items-center">
+                        <div class="vastu-chakra-bg-circle">
+                            <img src="./images/about/vastu_chakra.png" alt="" class="img-fluid" loading="lazy"> 
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <p class="light text-justify" style="font-size: 18px; line-height: 28px; text-align: justify;">
+                            We offer expert Vastu consultations, following precise compass directions, right at your
+                            doorstep. With over 24 years of experience, we serve both locally and internationally by
+                            phone or in person. We specialize in creating customized plans for homes, businesses,
+                            spiritual spaces, and schools. Our services are easy to access and understand, ensuring the
+                            best results for you. We travel regularly to Karnataka, Tamil Nadu, Telangana, Andhra
+                            Pradesh, Orissa, and Yanam to assist our clients.
+                        </p>
+                        <br>
+                        <p class="medium" style="font-size: 18px;">For a better life, consult with Sudarshanavani.</p>
+
+                        <div class="sv-rounded-btn">
+                            <!-- about us html -->
+                            <a href="./pages/aboutus.html">Know More</a>
+                            <img src="./assets/icons/svg_icons/caret_right_black.svg" alt="" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="Services">
+        <!-- <div class="services"> -->
+        <p class="section-title">Services Offered</p>
+        <!-- </div> -->
+
+        <div class="services-list">
+            <a href="https://wa.me/917093334559?text=Jai Srimannarayana, I need consultancy for New House Plan">
+                <div class="service-item">
+                    <img src="images/logo/sv_logo.png" alt="" loading="lazy">
+                    <p>New House Plan</p>
+                </div>
+            </a>
+
+            <a href="https://wa.me/917093334559?text=Jai Srimannarayana, I need consultancy for Factory Plan">
+                <div class="service-item">
+                    <img src="images/logo/sv_logo.png" alt="" loading="lazy">
+                    <p>Factory Plan</p>
+                </div>
+            </a>
+
+            <a href="https://wa.me/917093334559?text=Jai Srimannarayana, I need consultancy for Layout Plan">
+                <div class="service-item">
+                    <img src="images/logo/sv_logo.png" alt="" loading="lazy">
+                    <p>Layout Plan</p>
+                </div>
+            </a>
+
+            <a href="https://wa.me/917093334559?text=Jai Srimannarayana, I need consultancy for Apartment Plan">
+                <div class="service-item">
+                    <img src="images/logo/sv_logo.png" alt="" loading="lazy">
+                    <p>Apartment Plan</p>
+                </div>
+            </a>
+
+            <a
+                href="https://wa.me/917093334559?text=Jai Srimannarayana, I need consultancy for Ovserseas Services (USA)">
+                <div class="service-item">
+                    <img src="images/logo/sv_logo.png" alt="" loading="lazy">
+                    <p>Ovserseas Services (USA)</p>
+                </div>
+            </a>
+
+            <a href="https://wa.me/917093334559?text=Jai Srimannarayana, I need consultancy for Engineering Services">
+                <div class="service-item">
+                    <img src="images/logo/sv_logo.png" alt="" loading="lazy">
+                    <p>Engineering Services</p>
+                </div>
+            </a>
+
+            <a href="https://wa.me/917093334559?text=Jai Srimannarayana, I need consultancy for Plan Modification">
+                <div class="service-item">
+                    <img src="images/logo/sv_logo.png" alt="" loading="lazy">
+                    <p>Plan Modification</p>
+                </div>
+            </a>
+
+            <a href="https://wa.me/917093334559?text=Jai Srimannarayana, I need consultancy for House Renovation">
+                <div class="service-item">
+                    <img src="images/logo/sv_logo.png" alt="" loading="lazy">
+                    <p>House Renovation</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Gallery Section -->
+    <section id="Gallery">
+        <!-- <div class="gallery"> -->
+        <p class="section-title">Gallery</p>
+        <!-- </div> -->
+
+        <div class="image-slider">
+            <div class="slider-track infinite__scroller" data-direction="left" data-speed="medium">
+                <div class="slide">
+                    <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
+                </div>
+            </div>
+
+            <div class="slider-track infinite__scroller" data-direction="right" data-speed="medium">
+                <div class="slide">
+                    <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <div class="sv-rounded-btn">
+            <a href="pages/imageGallery.html">View More</a>
+            <img src="assets/icons/svg_icons/caret_right_black.svg" alt="" loading="lazy">
+        </div>
+    </section>
+
+
+    <!-- Videos Section -->
+    <section id="Videos">
+        <!-- <div class="videos"> -->
+        <p class="section-title">Trending Videos</p>
+        <!-- </div> -->
+
+        <div class="videos">
+            <div class="videos-col-left">
+                <div class="video-slider">
+                    <div class="video-items">
+                        <a href="">
+                            <iframe width="240" height="180"
+                                src="https://www.youtube.com/embed/m4QA60Chx2A?si=Zsct3Iq7AtFT3JKu"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </a>
+                        <a href="">
+                            <iframe width="240" height="180"
+                                src="https://www.youtube.com/embed/f3rJ_fYwYEw?si=mnt2Feg9AKRylhxK"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </a>
+                        <a href="">
+                            <iframe width="240" height="180"
+                                src="https://www.youtube.com/embed/viQEoj5s0Eg?si=a2QeV7Vi9n_BZpOB"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </a>
+                        <a href="">
+                            <iframe width="240" height="180"
+                                src="https://www.youtube.com/embed/oPvDkDcjA-s?si=heg3bSziQ2lgLaxB"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </a>
+                    </div>
+
+                    <div class="video-items">
+                        <a href="">
+                            <iframe width="240" height="180"
+                                src="https://www.youtube.com/embed/viQEoj5s0Eg?si=a2QeV7Vi9n_BZpOB"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </a>
+                        <a href="">
+                            <iframe width="240" height="180"
+                                src="https://www.youtube.com/embed/oPvDkDcjA-s?si=heg3bSziQ2lgLaxB"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </a>
+                        <a href="">
+                            <iframe width="240" height="180"
+                                src="https://www.youtube.com/embed/m4QA60Chx2A?si=Zsct3Iq7AtFT3JKu"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </a>
+                        <a href="">
+                            <iframe width="240" height="180"
+                                src="https://www.youtube.com/embed/f3rJ_fYwYEw?si=mnt2Feg9AKRylhxK"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="video-slider-btns">
+                    <img src="assets/icons/svg_icons/caret_left_black.svg" alt="" id="video-slider-btn-left">
+                    <img src="assets/icons/svg_icons/caret_right_black.svg" alt="" id="video-slider-btn-right">
+                </div>
+            </div>
+
+            <div class="videos-col-right">
+                <div class="reel-slider">
+                    <div class="reel-items">
+                        <a href="">
+                            <iframe width="240" height="376"
+                                src="https://www.youtube.com/embed/zX5c0F-qA70?si=z8KpiSzRkjb3SFvA"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </a>
+                        <a href="">
+                            <iframe width="240" height="376"
+                                src="https://www.youtube.com/embed/SwxiYYy4bZ4?si=z8KpiSzRkjb3SFvA"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </a>
+                        <a href="">
+                            <iframe width="240" height="376"
+                                src="https://www.youtube.com/embed/zX5c0F-qA70?si=z8KpiSzRkjb3SFvA"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </a>
+                        <a href="">
+                            <iframe width="240" height="376"
+                                src="https://www.youtube.com/embed/SwxiYYy4bZ4?si=z8KpiSzRkjb3SFvA"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="reel-slider-btns">
+                    <img src="assets/icons/svg_icons/caret_left_black.svg" alt="" id="reel-slider-btn-left">
+                    <img src="assets/icons/svg_icons/caret_right_black.svg" alt="" id="reel-slider-btn-right">
+                </div>
+            </div>
+        </div>
+
+        <div class="browse-btns">
+            <div class="sv-rounded-btn">
+                <!-- to change to gallery html -->
+                <a href="pages/videoGallery.html">Browse Videos</a>
+                <img src="assets/icons/svg_icons/caret_right_black.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="Contact">
+        <div class="contact">
+            <p class="section-title">Get In Touch</p>
+
+            <div class="container">
+                <div class="row">
+                    <div class="join-yt-fam col-md-6">
+                        <img src="assets/icons/svg_icons/yt_full_logo.svg" alt="" class="yt-img">
+                        <p class="yt-title medium">Join our YouTube Family</p>
+                        <p class="text-separator"></p>
+                        <p class="yt-content light">With over 2800+ videos related to different aspects of Vastu, we
+                            have also started Live Program for customers all over the world to provide live consultation
+                            and raise awareness in vastu.</p>
+                        <div class="subscribe-btn">
+                            <img src="assets/icons/svg_icons/yt_white_logo.svg" alt="">
+                            <a href="">Subscribe</a>
+                        </div>
+                    </div>
+
+                    <div class="sv-contact-form col-md-6">
+                        <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeJt70UrYU_HSS7jHGqW9OVT0WoaD-tSgBb9133S8IjCaFovQ/viewform?embedded=true" width="100%" height="1000px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Footer -->
+    <!-- Footer  start-->
+    <footer id="Footer">
+        <div class="pre-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="logo-col col-sm-6 col-md-6 col-lg-3">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="images/logo/sv_full_logo_.png" alt="Sudarshanavani_Logo" class="nav-logo-img">
+                            </a>
+                        </div>
+                        <!-- not working to do -->
+                        <div class="pf-visitor-count">
+                            <!-- <img src="assets/icons/svg_icons/visitor_black.svg" alt="SVG icon" class="">
+                            <p class="pf-visitor-num-count">10000</p> -->
+                            <div class="counter">
+                                <img src="https://hitwebcounter.com/counter/counter.php?page=13033909&style=0006&nbdigits=6&type=ip&initCount=0"
+                                    title="Counter Widget" Alt="Visit counter For Websites" /></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quick-links col-sm-6 col-md-6 col-lg-3">
+                        <p class="pf-col-title semibold">
+                            QUICK LINKS
+                        </p>
+                        <ul>
+                            <li><a href="pages/aboutus.html">About Us</a></li>
+                            <li><a href="pages/projects.html">Projects</a></li>
+                            <li><a href="pages/imageGallery.html">Gallery</a></li>
+                        </ul>
+                        <div class="sv-rounded-btn">
+                            <a href="pages/appointment.html">Book Appointment</a>
+                            <img src="assets/icons/svg_icons/caret_right_black.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="browse-by col-sm-6 col-md-6 col-lg-3">
+                        <p class="pf-col-title semibold">
+                            BROWSE BY CONTENT
+                        </p>
+                        <ul>
+                            <li><a href="pages/appointment.html">Live Visits Schedule</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="follow-us col-sm-6 col-md-6 col-lg-3">
+                        <p class="pf-col-title semibold">
+                            FOLLOW US ON
+                        </p>
+                        <div class="pf-social-links">
+                            <div class="pf-sl-yt">
+                                <img src="assets/icons/svg_icons/youtube_black.svg" alt="" loading="lazy">
+                                <a href="javascript:window.open(YOUTUBE_URL);">Youtube</a>
+                            </div>
+                            <div class="pf-sl-fb">
+                                <img src="assets/icons/svg_icons/facebook_black.svg" alt="" loading="lazy">
+                                <a href="javascript:window.open(FACEBOOK_URL);">Facebook</a>
+                            </div>
+                            <div class="pf-sl-i">
+                                <img src="assets/icons/svg_icons/instagram_black.svg" alt="" loading="lazy">
+                                <a href="javascript:window.open(INSTAGRAM_URL);">Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <!-- <p>Copyright © 2024 Sudarshanavani</p> -->
+            <p>Copyright © 2024 Sudarshanavani</p>
+        </div>
+    </footer>
+
+    <!-- Chat on WhatsApp Float Button -->
+    <a href="javascript:window.open(WA_URL);" class="chat-on-wa">
+        <img src="assets/icons/svg_icons/whatsapp_logo.svg" alt="" loading="lazy">
+    </a>
+
+    <!-- Scroll To Top Float Button -->
+    <div class="scroll-to-top">
+        <a href="#">
+            <img src="assets/icons/svg_icons/caret_up.svg" alt="" class="scroll_to_top_caret_up_svg" loading="lazy">
+        </a>
     </div>
-    <div class="bottom">
-      <div class="copyright">© 2024 All rights reserved</div>
-      <!-- <div class="legal">
-        <a> Contact </a>
-        <a> Terms </a>
-        <a> Privacy </a>
-      </div> -->
-    </div>
-  </footer>
+
+    <!-- Footer  end-->
 
 
-
-
-  <!-- WhatsApp Icon -->
-  <a href="https://api.whatsapp.com/send?phone=918341128143&text=Hi I came through your Website" class="whatsapp-button"
-    target="_blank">
-    <img src="assets/images/whatsapp.png" alt="WhatsApp" width="40" height="40">
-  </a>
-
-  <!-- Scroll to Top Button -->
-  <button onclick="scrollToTop()" class="scroll-top-button btn">
-    <img src="assets/svgs/Landing Page/Arrow down sign to navigate.svg" alt="Scroll to Top">
-  </button>
-
-
-  <!-- Bootstrap JS and its dependencies (jQuery and Popper) -->
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script>
-    // JavaScript to handle scroll-to-top button behavior
-    window.onscroll = function () { scrollFunction() };
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.querySelector('.scroll-top-button').classList.add('show');
-      } else {
-        document.querySelector('.scroll-top-button').classList.remove('show');
-      }
-    }
-
-    function scrollToTop() {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    }
-  </script>
+    <!-- AJAX Form Submission for GetInTouch -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Load Scripts -->
+    <script src="js/index.js"></script>
+    <script src="js/contants.js"></script>
 </body>
 
 </html>
