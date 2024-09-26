@@ -31,6 +31,7 @@ function hideSidenav() {
  images.forEach((img, index) => {
    img.addEventListener("click", () => {
      modal.style.display = "flex";
+    //  modal.style.display = "grid";
      modalImg.src = img.src;
      currentImageIndex = index;
    });

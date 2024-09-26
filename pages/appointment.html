@@ -42,6 +42,7 @@
 
         /* Live Visits Schedule */
         .live-visits {
+            flex-basis: fit-content;
             padding: 1.5rem 2rem;
             border-radius: 24px;
             background: var(--primary-gray);
@@ -77,16 +78,16 @@
             /* background: orange; */
         }
 
-        /* .appointment-form .info-text {
+        .appointment-form .info-text {
             font-size: 14px;
             padding-bottom: 1rem;
-        } */
+        }
 
         .booking-form {
             /* background: yellow; */
         }
 
-        /* 
+
         .form-row {
             padding-bottom: 1rem;
         }
@@ -98,7 +99,7 @@
             font-size: 14px;
             width: 100%;
         }
-        
+
         .form-select {
             padding: .5rem 1rem;
             border-radius: 25px;
@@ -113,11 +114,18 @@
 
         .sv-rounded-btn {
             font-size: 14px;
-        } */
+        }
+
+        .error-message {
+            color: red;
+            font-size: 12px;
+            margin-top: 5px;
+        }
     </style>
 </head>
 
 <body>
+
 
     <!-- Header -->
 
@@ -127,12 +135,19 @@
         <div class="pre-header">
             <div class="ph-contact-info">
                 <div class="ph-mail-info">
-                    <img src="../assets/icons/svg_icons/email_icn.svg" alt="SVG icon">
-                    <a href="mailto:sridattareddy13@gmail.com">support@sudarshanavani.com</a>
+
+                    <img src="../assets/icons/svg_icons/email_icn.svg" alt="SVG icon" loading="lazy">
+                    <a href="mailto:sudarshanavanivastu@gmail.com" id="c-mail">
+                        sudarshanavanivastu@gmail.com
+                    </a>
                 </div>
                 <div class="ph-mobile-info">
-                    <img src="../assets/icons/svg_icons/call_icn.svg" alt="SVG icon">
-                    <p>+91 70933 34559 | 70933 34669</p>
+                    <img src="../assets/icons/svg_icons/call_icn.svg" alt="SVG icon" loading="lazy">
+                    <p>
+                        <a href="tel:+917093334559" class="ph-mobile-num">+91 70933 34559 </a> |
+                        <a href="tel:+917093334669" class="ph-mobile-num">70933 34669</a>
+                    </p>
+
                 </div>
             </div>
 
@@ -158,7 +173,7 @@
                         <img src="../assets/icons/svg_icons/instagram.svg" alt="SVG icon">
                     </a>
                 </div>
-                <div onclick=toggleLanguageDropdown() class="lang-dropdown">
+                <!-- <div onclick=toggleLanguageDropdown() class="lang-dropdown">
                     <img src="../assets/icons/svg_icons/globe.svg" alt="SVG icon" class="globe_svg">
                     <p>Language</p>
                     <img src="../assets/icons/svg_icons/caret_down.svg" alt="SVG icon" class="caret_down_svg">
@@ -169,7 +184,7 @@
                             <li><a onclick=toggleLanguageDropdown() href="">English</a></li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -197,7 +212,7 @@
                             <li><a href="../index.html#Videos">Trending Videos</a></li>
                         </ul>
                     </li>
-                    <li><a href="projects.html">Projects</a></li>
+                    <!-- <li><a href="projects.html">Projects</a></li> -->
                     <li><a href="../index.html#Contact">Get In Touch</a></li>
                 </ul>
                 <a href="appointment.html" class="nav-cta-btn">Book Appointment</a>
@@ -228,7 +243,7 @@
                         <li><a onclick=hideSidenav() href="../index.html#Videos">Trending Videos</a></li>
                     </ul>
                 </li>
-                <li><a onclick=hideSidenav() href="projects.html">Projects</a></li>
+                <!-- <li><a onclick=hideSidenav() href="projects.html">Projects</a></li> -->
                 <li><a onclick=hideSidenav() href="../index.html#Contact">Get In Touch</a></li>
             </ul>
             <a href="./appointment.html" class="resp-nav-cta-btn">Book Appointment</a>
@@ -241,61 +256,140 @@
         <p>Book Appointment</p>
         <span class="text-separator"></span>
     </div>
+
+    <!-- <div class="container p-3">
+        <h4 class="text-center">Note</h4>
+        <p class="p-2"><b>Swamy Garu</b> has been invited by <b>Telangana Development Forum (TDF-USA)</b> for the upcoming Bathukamma Festival
+            event to be held at New Jersey, USA from <b>03.10.2024 to 12.10.2024 </b> for providing Vastu insights and awareness
+            to the participants.</p>
+        <p class="p-2">
+            Swamy Garu would be available from 04-Oct-2024 to 31-Oct-2024 for providing Vastu services at <b>New Jersey /
+                Dallas / Washington DC / Texas</b> in USA and on call in Canada
+        </p>
+    </div> -->
+
     <!-- Main Section -->
     <section class="main-section" id="">
         <div class="live-visits col-lg-6 col-md-12">
-            <p class="title-text medium">Live Visits Schedule</p>
+            <p class="title-text medium">October 2024 USA - Schedule</p>
 
             <table class="">
                 <thead>
                     <tr>
                         <th>Date</th>
                         <th>State</th>
-                        <th>City/Village</th>
+                        <!-- <th>City/Village</th> -->
                     </tr>
                 </thead>
 
                 <tbody style="padding-bottom: 0rem;">
                     <tr>
-                        <td style="width: 94px;">31-05-2024</td>
-                        <td>Hyderabad</td>
-                        <td>Kakinada, Pithapuram, Coringa</td>
+                        <td>
+                            <h6>04th to 12th October</h6>
+                        </td>
+                        <td>
+                            <h6> New Jercy</h6>
+                        </td>
+                        <!-- <td>Kakinada, Pithapuram, Coringa</td> -->
                     </tr>
                     <tr>
-                        <td>11-05-2024</td>
-                        <td>Andhra Pradesh</td>
-                        <td>Kakinada</td>
+                        <td>
+                            <h6> 13th to 18TH October</h6>
+                        </td>
+                        <td>
+                            <h6> Washington DC</h6>
+                        </td>
+                        <!-- <td>Kakinada</td> -->
                     </tr>
                     <tr>
-                        <td>11-05-2024</td>
-                        <td>Kurnool</td>
-                        <td>Kakinada, Amalapuram, Bejawada, Kathipudi</td>
+                        <td>
+                            <h6>19th to 23rd October </h6>
+                        </td>
+                        <td>
+                            <h6>North Corolina / Texas </h6>
+                        </td>
+                        <!-- <td>Kakinada, Amalapuram, Bejawada, Kathipudi</td> -->
                     </tr>
                     <tr>
-                        <td>11-05-2024</td>
-                        <td>Andhra Pradesh</td>
-                        <td>Kakinada</td>
-                    </tr>
-                    <tr>
-                        <td>11-05-2024</td>
-                        <td>Andhra Pradesh</td>
-                        <td>Kakinada</td>
-                    </tr>
-                    <tr>
-                        <td>11-05-2024</td>
-                        <td>Andhra Pradesh</td>
-                        <td>Kakinada</td>
+                        <td>
+                            <h6> 24th to 28TH October</h6>
+                        </td>
+                        <td>
+                            <h6>Dallas / Arizona </h6>
+                        </td>
+                        <!-- <td>Kakinada</td> -->
                     </tr>
                 </tbody>
             </table>
         </div>
 
 
-        <div class="col-lg-6 col-md-12">
-            <iframe
-                src="https://docs.google.com/forms/d/e/1FAIpQLSeJt70UrYU_HSS7jHGqW9OVT0WoaD-tSgBb9133S8IjCaFovQ/viewform?embedded=true"
-                width="100%" height="1000px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <div class="appointment-form">
+            <p class="info-text">
+                Please fill all the below details to schedule an appointment with us.
+            </p>
+
+            <form
+                action="https://docs.google.com/forms/d/e/1FAIpQLSeJt70UrYU_HSS7jHGqW9OVT0WoaD-tSgBb9133S8IjCaFovQ/formResponse"
+                id="booking-form" class="booking-form" method="post" onsubmit="submiited=true" target="hiddenConfirm">
+                <div class="form-row">
+                    <input type="text" name="entry.1045445685" class="form-input" id="fullname" placeholder="Fullname"
+                        required>
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                <div class="form-row">
+                    <input type="text" name="entry.188945795" class="form-input" id="email" placeholder="Email address"
+                        required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="form-row">
+                    <input type="text" name="entry.1214155541" class="form-input" id="place"
+                        placeholder="Enter your Place, State, Country" required>
+                    <span class="error-message" id="place-error"></span>
+                </div>
+                <div class="form-row">
+                    <input type="number" name="entry.1145074326" class="form-input" id="mobile"
+                        placeholder="Mobile Number" required>
+                    <span class="error-message" id="mobile-error"></span>
+                </div>
+
+                <div class="form-row">
+                    <select name="entry.286490368" id="requirement" class="form-select" default-value="" required>
+                        <option value="" selected disabled>Select Vastu Requirement</option>
+                        <option name="entry.286490368" id="entry.286490368" value="New House Plan">New House Plan
+                        </option>
+                        <option name="entry.286490368" id="entry.286490368" value="Ovserseas Services (USA)">Ovserseas
+                            Services (USA)</option>
+                        <option name="entry.286490368" id="entry.286490368" value="Factory Plan">Factory Plan</option>
+                        <option name="entry.286490368" id="entry.286490368" value="Layout Plan">Layout Plan</option>
+                        <option name="entry.286490368" id="entry.286490368" value="Apartment Plan">Apartment Plan
+                        </option>
+                        <option name="entry.286490368" id="entry.286490368" value="Engineering Services">Engineering
+                            Services</option>
+                        <option name="entry.286490368" id="entry.286490368" value="Plan Modification">Plan Modification
+                        </option>
+                        <option name="entry.286490368" id="entry.286490368" value="House Renovation">House Renovation
+                        </option>
+                    </select>
+                    <span class="error-message" id="requirement-error"></span>
+                </div>
+                <div class="form-row">
+                    <textarea name="entry.1166870214" class="form-input" id="issue"
+                        placeholder="Add short description of your requirement" required></textarea>
+                    <span class="error-message" id="issue-error"></span>
+                </div>
+                <div class="form-row">
+                    <input type="submit" name="submit" class="sv-rounded-btn" id="submit" value="Send Request">
+                </div>
+            </form>
         </div>
+
+        <!-- for google form redirect to local site page start-->
+        <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;" onload="if(submiited){
+        console.log(submiited)
+        window.location='confirmation.html'
+    }"></iframe>
+        <!-- for google form redirect to local site page end-->
     </section>
 
     <!-- Footer -->
@@ -328,7 +422,7 @@
                         </p>
                         <ul>
                             <li><a href="aboutus.html">About Us</a></li>
-                            <li><a href="projects.html">Projects</a></li>
+                            <!-- <li><a href="projects.html">Projects</a></li> -->
                             <li><a href="imageGallery.html">Gallery</a></li>
                         </ul>
                         <div class="sv-rounded-btn">
@@ -395,6 +489,86 @@
     <!-- Load Scripts -->
     <script src="../js/index.js"></script>
     <script src="../js/contants.js"></script>
+    <script>
+        // for google form redirect to local site page
+        var submiited = false;
+
+
+
+        const form = document.getElementById('booking-form');
+
+        form.addEventListener('submit', function (event) {
+            let isValid = true;
+
+            // Fullname validation
+            const fullname = document.getElementById('fullname').value.trim();
+            if (fullname === '') {
+                isValid = false;
+                document.getElementById('name-error').textContent = "Fullname is required.";
+            } else {
+                document.getElementById('name-error').textContent = "";
+            }
+
+            // Email validation
+            const email = document.getElementById('email').value.trim();
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            if (!emailPattern.test(email)) {
+                isValid = false;
+                document.getElementById('email-error').textContent = "Please enter a valid email address.";
+            } else {
+                document.getElementById('email-error').textContent = "";
+            }
+
+            // Place validation
+            const place = document.getElementById('place').value.trim();
+            if (place === '') {
+                isValid = false;
+                document.getElementById('place-error').textContent = "Place, State, Country is required.";
+            } else {
+                document.getElementById('place-error').textContent = "";
+            }
+
+            // Mobile number validation
+            const mobile = document.getElementById('mobile').value.trim();
+            // pattern validation
+            // const mobilePattern = /^[0-9]{10}$/;
+            // if (!mobilePattern.test(mobile)) {
+            //     isValid = false;
+            //     document.getElementById('mobile-error').textContent = "Please enter a valid 10-digit mobile number.";
+            // } else {
+            //     document.getElementById('mobile-error').textContent = "";
+            // }
+            if (mobile === '') {
+                isValid = false;
+                document.getElementById('place-error').textContent = "Place, State, Country is required.";
+            } else {
+                document.getElementById('place-error').textContent = "";
+            }
+
+            // Requirement validation
+            const requirement = document.getElementById('requirement').value;
+            if (requirement === '') {
+                isValid = false;
+                document.getElementById('requirement-error').textContent = "Please select a requirement.";
+            } else {
+                document.getElementById('requirement-error').textContent = "";
+            }
+
+            // Issue/Description validation
+            const issue = document.getElementById('issue').value.trim();
+            if (issue === '') {
+                isValid = false;
+                document.getElementById('issue-error').textContent = "Description is required.";
+            } else {
+                document.getElementById('issue-error').textContent = "";
+            }
+
+            // Prevent form submission if any validation fails
+            if (!isValid) {
+                event.preventDefault();
+            }
+        });
+    </script>
 </body>
 
 </html>

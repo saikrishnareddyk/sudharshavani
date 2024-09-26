@@ -30,6 +30,16 @@
 
     <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- lightbox gallery plugin for images  start-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/baguettebox.js@1.12.0/dist/baguetteBox.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/baguettebox.js@1.12.0/dist/baguetteBox.min.js" async></script>
+    <script>
+        window.addEventListener("load", function () {
+            baguetteBox.run(".gallery");
+        });
+    </script>
+    <!-- lightbox gallery plugin for images end -->
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="10">
@@ -42,12 +52,19 @@
         <div class="pre-header">
             <div class="ph-contact-info">
                 <div class="ph-mail-info">
+
                     <img src="../assets/icons/svg_icons/email_icn.svg" alt="SVG icon" loading="lazy">
-                    <a href="mailto:sridattareddy13@gmail.com">support@sudarshanavani.com</a>
+                    <a href="mailto:sudarshanavanivastu@gmail.com" id="c-mail">
+                        sudarshanavanivastu@gmail.com
+                    </a>
                 </div>
                 <div class="ph-mobile-info">
                     <img src="../assets/icons/svg_icons/call_icn.svg" alt="SVG icon" loading="lazy">
-                    <p>+91 70933 34559 | 70933 34669</p>
+                    <p>
+                        <a href="tel:+917093334559" class="ph-mobile-num">+91 70933 34559 </a> |
+                        <a href="tel:+917093334669" class="ph-mobile-num">70933 34669</a>
+                    </p>
+
                 </div>
             </div>
 
@@ -71,10 +88,11 @@
                         <img src="../assets/icons/svg_icons/instagram.svg" alt="SVG icon" loading="lazy">
                     </a>
                 </div>
-                <div onclick=toggleLanguageDropdown() class="lang-dropdown">
+                <!-- <div onclick=toggleLanguageDropdown() class="lang-dropdown">
                     <img src="../assets/icons/svg_icons/globe.svg" alt="SVG icon" class="globe_svg" loading="lazy">
                     <p>Language</p>
-                    <img src="../assets/icons/svg_icons/caret_down.svg" alt="SVG icon" class="caret_down_svg" loading="lazy">
+                    <img src="../assets/icons/svg_icons/caret_down.svg" alt="SVG icon" class="caret_down_svg"
+                        loading="lazy">
 
                     <div class="lang-dropdown-menu">
                         <ul>
@@ -82,7 +100,7 @@
                             <li><a onclick=toggleLanguageDropdown() href="">English</a></li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -90,13 +108,15 @@
         <div class="navbar">
             <div class="nav-logo">
                 <a href="#">
-                    <img src="../images/logo/sv_full_logo_.png" alt="Sudarshanavani_Logo" class="nav-logo-img" loading="lazy">
+                    <img src="../images/logo/sv_full_logo_.png" alt="Sudarshanavani_Logo" class="nav-logo-img"
+                        loading="lazy">
                 </a>
             </div>
 
             <div class="menu-links">
                 <ul>
                     <li><a href="./index.html" class="">Home</a></li>
+                    <!-- <li><a href="./index.html#About">About</a></li> -->
                     <li><a href="./pages/aboutus.html">About</a></li>
                     <li>
                         <a href="../index.html#Services">Services</a>
@@ -110,7 +130,6 @@
                             <li><a href="../index.html#Videos">Trending Videos</a></li>
                         </ul>
                     </li>
-                    <li><a href="pages/projects.html">Projects</a></li>
                     <li><a href="../index.html#Contact">Get In Touch</a></li>
                 </ul>
                 <a href="./pages/appointment.html" class="nav-cta-btn">Book Appointment</a>
@@ -126,7 +145,6 @@
             <div onclick=hideSidenav() class="resp-nav-close-icn">
                 <img src="../assets/icons/svg_icons/close_icn.svg" alt="SVG icon">
             </div>
-            <li><a href="pages/videoGallery.html">Video Gallery</a></li>
             <ul class="resp-nav-links">
                 <li><a onclick=hideSidenav() href="../index.html" class="active">Home</a></li>
                 <li><a onclick=hideSidenav() href="./pages/aboutus.html">About</a></li>
@@ -142,7 +160,6 @@
                         <li><a onclick=hideSidenav() href="../index.html#Videos">Trending Videos</a></li>
                     </ul>
                 </li>
-                <li><a onclick=hideSidenav() href="pages/projects.html">Projects</a></li>
                 <li><a onclick=hideSidenav() href="#Contact">Get In Touch</a></li>
             </ul>
             <a href="pages/appointment.html" class="resp-nav-cta-btn">Book Appointment</a>
@@ -153,9 +170,15 @@
 
     <!-- Hero Section -->
     <section id="Home">
-        <!-- <div class="jai-sri"></div> -->
 
         <div class="hero">
+            <div class="gallery" style="width: 300px;">
+                <a href="images/gallery/english.jpg">
+                    <div class="gallery-item">
+                        <img src="images/gallery/english.jpg" alt="Image 1" class="img-fluid">
+                    </div>
+                </a>
+            </div>
             <div class="hero-content">
                 <h2 class="hero-title">Sudarshanavani</h2>
                 <h6 class="hero-tagline">Paripoorna Vastu</h6>
@@ -181,14 +204,23 @@
 
                 <div class="hero-cta">
                     <a href="javascript:window.open(WA_URL);" class="get-in-touch-cta">
-                        <img src="./assets/icons/svg_icons/whatsapp_logo.svg" alt="" class="whatsapp_logo_svg" loading="lazy">
+                        <img src="./assets/icons/svg_icons/whatsapp_logo.svg" alt="" class="whatsapp_logo_svg"
+                            loading="lazy">
                         <p>Get In Touch</p>
                     </a>
                     <a href="javascript:window.open(YOUTUBE_URL);" class="visit-channel-cta">
-                        <img src="./assets/icons/svg_icons/youtube_logo.svg" alt="" class="youtube_logo_svg" loading="lazy">
+                        <img src="./assets/icons/svg_icons/youtube_logo.svg" alt="" class="youtube_logo_svg"
+                            loading="lazy">
                         <p>Visit My Channel</p>
                     </a>
                 </div>
+            </div>
+            <div class="gallery" style="width: 300px;">
+                <a href="images/about/SV - Card.jpg">
+                    <div class="gallery-item">
+                        <img src="images/about/SV - Card.jpg" alt="Image 1" class="img-fluid">
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -203,19 +235,25 @@
                 <div class="row">
                     <div class="col-md-5 d-flex justify-content-center align-items-center">
                         <div class="vastu-chakra-bg-circle">
-                            <img src="./images/about/vastu_chakra.png" alt="" class="img-fluid" loading="lazy"> 
+                            <img src="./images/about/vastu_chakra.png" alt="" class="img-fluid" loading="lazy">
                         </div>
                     </div>
                     <div class="col-md-7">
+
+                        <p class="light text-justify" style="font-size: 18px; line-height: 28px; text-align: justify;">
+                            Sudarshanavani is a leading organization in providing Vastu Consultancy Services in India.
+                            G.L.N.Swamy Garu, recipient of Vastu Ratna Award (Sir CV Raman Foundation - 2017) and Vastu
+                            Vibhushan (Suman Arts – 2023) is a Hereditary third generation Vastu Pandit engaging in
+                            providing Paripurna Vastu services from 24 years for creating harmonious living spaces with
+                            positive vibrations.</p>
+                        <br>
                         <p class="light text-justify" style="font-size: 18px; line-height: 28px; text-align: justify;">
                             We offer expert Vastu consultations, following precise compass directions, right at your
-                            doorstep. With over 24 years of experience, we serve both locally and internationally by
-                            phone or in person. We specialize in creating customized plans for homes, businesses,
-                            spiritual spaces, and schools. Our services are easy to access and understand, ensuring the
-                            best results for you. We travel regularly to Karnataka, Tamil Nadu, Telangana, Andhra
-                            Pradesh, Orissa, and Yanam to assist our clients.
+                            doorstep. we serve both locally and internationally by phone or in person. We specialize in
+                            creating customized plans for homes, businesses, spiritual spaces, and schools. Our services
+                            are easy to access and understand, ensuring the best results for you.
                         </p>
-                        <br>
+
                         <p class="medium" style="font-size: 18px;">For a better life, consult with Sudarshanavani.</p>
 
                         <div class="sv-rounded-btn">
@@ -237,28 +275,28 @@
         <!-- </div> -->
 
         <div class="services-list">
-            <a href="https://wa.me/917093334559?text=Jai Srimannarayana, I need consultancy for New House Plan">
+            <a href="https://wa.me/917093334559?text=Hi Sudarshanavani, I need consultancy for New House Plan">
                 <div class="service-item">
                     <img src="images/logo/sv_logo.png" alt="" loading="lazy">
                     <p>New House Plan</p>
                 </div>
             </a>
 
-            <a href="https://wa.me/917093334559?text=Jai Srimannarayana, I need consultancy for Factory Plan">
+            <a href="https://wa.me/917093334559?text=Hi Sudarshanavani, I need consultancy for Factory Plan">
                 <div class="service-item">
                     <img src="images/logo/sv_logo.png" alt="" loading="lazy">
                     <p>Factory Plan</p>
                 </div>
             </a>
 
-            <a href="https://wa.me/917093334559?text=Jai Srimannarayana, I need consultancy for Layout Plan">
+            <a href="https://wa.me/917093334559?text=Hi Sudarshanavani, I need consultancy for Layout Plan">
                 <div class="service-item">
                     <img src="images/logo/sv_logo.png" alt="" loading="lazy">
                     <p>Layout Plan</p>
                 </div>
             </a>
 
-            <a href="https://wa.me/917093334559?text=Jai Srimannarayana, I need consultancy for Apartment Plan">
+            <a href="https://wa.me/917093334559?text=Hi Sudarshanavani, I need consultancy for Apartment Plan">
                 <div class="service-item">
                     <img src="images/logo/sv_logo.png" alt="" loading="lazy">
                     <p>Apartment Plan</p>
@@ -266,28 +304,28 @@
             </a>
 
             <a
-                href="https://wa.me/917093334559?text=Jai Srimannarayana, I need consultancy for Ovserseas Services (USA)">
+                href="https://wa.me/917093334559?text=Hi Sudarshanavani, I need consultancy for Ovserseas Services (USA)">
                 <div class="service-item">
                     <img src="images/logo/sv_logo.png" alt="" loading="lazy">
                     <p>Ovserseas Services (USA)</p>
                 </div>
             </a>
 
-            <a href="https://wa.me/917093334559?text=Jai Srimannarayana, I need consultancy for Engineering Services">
+            <a href="https://wa.me/917093334559?text=Hi Sudarshanavani, I need consultancy for Engineering Services">
                 <div class="service-item">
                     <img src="images/logo/sv_logo.png" alt="" loading="lazy">
                     <p>Engineering Services</p>
                 </div>
             </a>
 
-            <a href="https://wa.me/917093334559?text=Jai Srimannarayana, I need consultancy for Plan Modification">
+            <a href="https://wa.me/917093334559?text=Hi Sudarshanavani, I need consultancy for Plan Modification">
                 <div class="service-item">
                     <img src="images/logo/sv_logo.png" alt="" loading="lazy">
                     <p>Plan Modification</p>
                 </div>
             </a>
 
-            <a href="https://wa.me/917093334559?text=Jai Srimannarayana, I need consultancy for House Renovation">
+            <a href="https://wa.me/917093334559?text=Hi Sudarshanavani, I need consultancy for House Renovation">
                 <div class="service-item">
                     <img src="images/logo/sv_logo.png" alt="" loading="lazy">
                     <p>House Renovation</p>
@@ -306,55 +344,84 @@
         <div class="image-slider">
             <div class="slider-track infinite__scroller" data-direction="left" data-speed="medium">
                 <div class="slide">
-                    <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
+                    <img src="images/gallery/english.jpg" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/gallery/english2.jpg" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/gallery/vastu vibushan.jpg" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/about/TORI Radio -programme.jpg" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/about/2024- Ugadi Sanmanam.jpg" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/about/vastu ratna 2.jpg" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/gallery/Mana Radio Poster.jpg" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/about/SV - Card.jpg" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/about/2016- VaSTU Ratna.jpg" alt="" loading="lazy">
                 </div>
                 <div class="slide">
                     <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
                 </div>
                 <div class="slide">
-                    <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
+                    <img src="images/gallery/Gudimella_Lakshmi_Niranjan_ATA_Invitation2024_page-0001.jpg" alt=""
+                        loading="lazy">
                 </div>
                 <div class="slide">
-                    <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
+                    <img src="images/gallery/TDF- USA Invitation Letter Sep-2024.jpg" alt="" loading="lazy">
                 </div>
-                <div class="slide">
+                <!-- <div class="slide">
                     <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
-                </div>
-                <div class="slide">
-                    <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
-                </div>
-                <div class="slide">
-                    <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
-                </div>
-                <div class="slide">
-                    <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
-                </div>
+                </div> -->
             </div>
 
             <div class="slider-track infinite__scroller" data-direction="right" data-speed="medium">
                 <div class="slide">
-                    <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
+                    <img src="images/gallery/english.jpg" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/gallery/english2.jpg" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/gallery/vastu vibushan.jpg" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/about/TORI Radio -programme.jpg" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/about/2024- Ugadi Sanmanam.jpg" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/about/vastu ratna 2.jpg" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/gallery/Mana Radio Poster.jpg" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/about/SV - Card.jpg" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="images/about/2016- VaSTU Ratna.jpg" alt="" loading="lazy">
                 </div>
                 <div class="slide">
                     <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
                 </div>
                 <div class="slide">
-                    <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
+                    <img src="images/gallery/Gudimella_Lakshmi_Niranjan_ATA_Invitation2024_page-0001.jpg" alt=""
+                        loading="lazy">
                 </div>
                 <div class="slide">
-                    <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
-                </div>
-                <div class="slide">
-                    <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
-                </div>
-                <div class="slide">
-                    <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
-                </div>
-                <div class="slide">
-                    <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
-                </div>
-                <div class="slide">
-                    <img src="images/gallery/sliderImg.JPG" alt="" loading="lazy">
+                    <img src="images/gallery/TDF- USA Invitation Letter Sep-2024.jpg" alt="" loading="lazy">
                 </div>
             </div>
         </div>
@@ -503,20 +570,34 @@
             <div class="container">
                 <div class="row">
                     <div class="join-yt-fam col-md-6">
-                        <img src="assets/icons/svg_icons/yt_full_logo.svg" alt="" class="yt-img">
+                        <img src="assets/icons/svg_icons/yt_full_logo.svg" alt="youtube" class="yt-img">
                         <p class="yt-title medium">Join our YouTube Family</p>
                         <p class="text-separator"></p>
                         <p class="yt-content light">With over 2800+ videos related to different aspects of Vastu, we
                             have also started Live Program for customers all over the world to provide live consultation
                             and raise awareness in vastu.</p>
                         <div class="subscribe-btn">
-                            <img src="assets/icons/svg_icons/yt_white_logo.svg" alt="">
-                            <a href="">Subscribe</a>
+                            <img src="assets/icons/svg_icons/yt_white_logo.svg" alt=" youtube">
+                            <a href="https://www.youtube.com/channel/UCofrprbKKHSXRDIWDJgbCkg?sub_confirmation=1">Subscribe</a>
                         </div>
                     </div>
 
-                    <div class="sv-contact-form col-md-6">
-                        <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeJt70UrYU_HSS7jHGqW9OVT0WoaD-tSgBb9133S8IjCaFovQ/viewform?embedded=true" width="100%" height="1000px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+                    <div class="sv-contact-form col-md-6 text-center">
+                        <div class="col-6 col-sm-12">
+                            <a href="https://www.instagram.com/sudarshanavani/">
+                                <img src="images/logo/social/insta.png" alt="sudarshanavani instagram">
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-12 pt-3">
+                            <a href="https://www.facebook.com/Sudarshanavani">
+                                <img src="images/logo/social/fb.png" alt="sudarshanavani facebook ">
+                            </a>
+                        </div>
+                        <div class="col-4 col-sm-12 pt-3">
+                            <a href="https://g.page/r/CZNoTcZhkVn2EAE/">
+                                <img src="images/logo/social/Google-Reviews.png" alt="sudarshanavani review" style="width: 200px;">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -556,7 +637,6 @@
                         </p>
                         <ul>
                             <li><a href="pages/aboutus.html">About Us</a></li>
-                            <li><a href="pages/projects.html">Projects</a></li>
                             <li><a href="pages/imageGallery.html">Gallery</a></li>
                         </ul>
                         <div class="sv-rounded-btn">

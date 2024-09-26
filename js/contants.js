@@ -2,7 +2,7 @@
 const YOUTUBE_URL = 'https://www.youtube.com/@SudarshanaVaniVastu';
 const FACEBOOK_URL = 'https://www.facebook.com/Sudarshanavani';
 const INSTAGRAM_URL = 'https://www.instagram.com/sudarshanavani/';
-const WA_URL = 'https://wa.me/917093334559?text=Jai Srimannarayna';
+const WA_URL = 'https://wa.me/917093334559?text=Hi Sudarshanavani';
 
 // KEYS
 const SMTP_KEY = 'kzqy uzfi iaiw mtjm';

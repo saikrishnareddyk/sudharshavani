@@ -1,7 +1,6 @@
 /*---------------- 
  Responsive Navbar 
 -----------------*/
-
 // Show Responsive version of Navbar
 function showSidenav() {
     const sidebar = document.querySelector('.responsive-nav')

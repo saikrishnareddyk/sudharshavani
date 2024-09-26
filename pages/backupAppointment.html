@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment | Sudarshanavani</title>
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Core theme CSS & JS (Bootstrap)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link href="../css/styles.css" rel="stylesheet" />
+
+    <style>
+        .main-section {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 6rem;
+            padding: 5rem 1rem;
+        }
+
+        /* Live Visits Schedule */
+        .live-visits {
+            flex-basis: fit-content;
+            padding: 1.5rem 2rem;
+            border-radius: 24px;
+            background: var(--primary-gray);
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .live-visits .title-text {
+            font-size: 18px;
+            color: var(--primary-blue);
+        }
+
+        table {
+            margin-top: 1rem;
+            font-size: 14px;
+            max-width: 450px;
+        }
+
+        th {
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            padding: .4rem .8rem;
+            font-size: 14px;
+        }
+
+        td {
+            padding: .2rem .8rem;
+            font-size: 12px;
+            font-weight: 300;
+        }
+
+        /* Appointment Form */
+        .appointment-form {
+            /* background: orange; */
+        }
+
+        /* .appointment-form .info-text {
+            font-size: 14px;
+            padding-bottom: 1rem;
+        } */
+
+        .booking-form {
+            /* background: yellow; */
+        }
+
+        /* 
+        .form-row {
+            padding-bottom: 1rem;
+        }
+
+        .form-input {
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            border: 1px solid black;
+            font-size: 14px;
+            width: 100%;
+        }
+        
+        .form-select {
+            padding: .5rem 1rem;
+            border-radius: 25px;
+            border: 1px solid black;
+            font-size: 14px;
+            width: 100%;
+        }
+
+        textarea {
+            height: 140px;
+        }
+
+        .sv-rounded-btn {
+            font-size: 14px;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <!-- Header start -->
+    <header id="Header">
+        <!-- Pre-Header -->
+        <div class="pre-header">
+            <div class="ph-contact-info">
+                <div class="ph-mail-info">
+
+                    <img src="../assets/icons/svg_icons/email_icn.svg" alt="SVG icon" loading="lazy">
+                    <a href="mailto:sudarshanavanivastu@gmail.com" id="c-mail">
+                        sudarshanavanivastu@gmail.com
+                    </a>
+                </div>
+                <div class="ph-mobile-info">
+                    <img src="../assets/icons/svg_icons/call_icn.svg" alt="SVG icon" loading="lazy">
+                    <p>
+                        <a href="tel:+917093334559" class="ph-mobile-num">+91 70933 34559 </a> |
+                        <a href="tel:+917093334669" class="ph-mobile-num">70933 34669</a>
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="ph-col-right">
+                <div class="ph-visitor-count">
+                    <!-- <img src="assets/icons/svg_icons/visitor.svg" alt="SVG icon" class="globe_svg">
+                <p class="ph-visitor-num-count">10000</p> -->
+
+                    <div class="counter">
+                        <img src="https://hitwebcounter.com/counter/counter.php?page=13033909&style=0006&nbdigits=6&type=ip&initCount=0"
+                            title="Counter Widget" Alt="Visit counter For Websites" /></a>
+                    </div>
+                </div>
+
+                <div class="ph-social-links">
+                    <a href="javascript:window.open(YOUTUBE_URL);">
+                        <img src="../assets/icons/svg_icons/youtube.svg" alt="SVG icon">
+                    </a>
+                    <a href="javascript:window.open(FACEBOOK_URL);">
+                        <img src="../assets/icons/svg_icons/facebook.svg" alt="SVG icon">
+                    </a>
+                    <a href="javascript:window.open(INSTAGRAM_URL);">
+                        <img src="../assets/icons/svg_icons/instagram.svg" alt="SVG icon">
+                    </a>
+                </div>
+                <!-- <div onclick=toggleLanguageDropdown() class="lang-dropdown">
+                    <img src="../assets/icons/svg_icons/globe.svg" alt="SVG icon" class="globe_svg">
+                    <p>Language</p>
+                    <img src="../assets/icons/svg_icons/caret_down.svg" alt="SVG icon" class="caret_down_svg">
+
+                    <div class="lang-dropdown-menu">
+                        <ul>
+                            <li><a onclick=toggleLanguageDropdown() href="">Telugu</a></li>
+                            <li><a onclick=toggleLanguageDropdown() href="">English</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <img src="../images/logo/sv_full_logo_.png" alt="Sudarshanavani_Logo" class="nav-logo-img">
+                </a>
+            </div>
+
+            <div class="menu-links">
+                <ul>
+                    <li><a href="../index.html" class="">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li>
+                        <a href="../index.html#Services">Services</a>
+                    </li>
+                    <li>
+                        <a href="../index.html#Gallery">Gallery</a>
+                        <img src="../assets/icons/svg_icons/caret_down_black.svg" alt="">
+                        <ul class="gallery-dropdown">
+                            <li><a href="imageGallery.html">Image Gallery</a></li>
+                            <li><a href="videoGallery.html">Video Gallery</a></li>
+                            <li><a href="../index.html#Videos">Trending Videos</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li><a href="projects.html">Projects</a></li> -->
+                    <li><a href="../index.html#Contact">Get In Touch</a></li>
+                </ul>
+                <a href="appointment.html" class="nav-cta-btn">Book Appointment</a>
+            </div>
+
+            <div onclick=showSidenav() class="nav-toggle-btn">
+                <img src="../assets/icons/svg_icons/hamburger_icn.svg" alt="SVG icon">
+            </div>
+        </div>
+
+        <!-- Responsive Navbar -->
+        <div class="responsive-nav">
+            <div onclick=hideSidenav() class="resp-nav-close-icn">
+                <img src="../assets/icons/svg_icons/close_icn.svg" alt="SVG icon">
+            </div>
+            <ul class="resp-nav-links">
+                <li><a onclick=hideSidenav() href="../index.html" class="active">Home</a></li>
+                <li><a onclick=hideSidenav() href="aboutus.html">About</a></li>
+                <li>
+                    <a onclick=hideSidenav() href="../index.html#Services">Services</a>
+                </li>
+                <li>
+                    <a onclick=hideSidenav() href="../index.html#Gallery">Gallery</a>
+                    <img src="../assets/icons/svg_icons/caret_down_black.svg" alt="">
+                    <ul class="resp-gallery-dropdown">
+                        <li><a onclick=hideSidenav() href="imageGallery.html">Image Gallery</a></li>
+                        <li><a onclick=hideSidenav() href="videoGallery.html">Video Gallery</a></li>
+                        <li><a onclick=hideSidenav() href="../index.html#Videos">Trending Videos</a></li>
+                    </ul>
+                </li>
+                <!-- <li><a onclick=hideSidenav() href="projects.html">Projects</a></li> -->
+                <li><a onclick=hideSidenav() href="../index.html#Contact">Get In Touch</a></li>
+            </ul>
+            <a href="./appointment.html" class="resp-nav-cta-btn">Book Appointment</a>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- Page Title -->
+    <div class="page-title-container">
+        <p>Book Appointment</p>
+        <span class="text-separator"></span>
+    </div>
+
+    <!-- <div class="container p-3">
+        <h4 class="text-center">Note</h4>
+        <p class="p-2"><b>Swamy Garu</b> has been invited by <b>Telangana Development Forum (TDF-USA)</b> for the upcoming Bathukamma Festival
+            event to be held at New Jersey, USA from <b>03.10.2024 to 12.10.2024 </b> for providing Vastu insights and awareness
+            to the participants.</p>
+        <p class="p-2">
+            Swamy Garu would be available from 04-Oct-2024 to 31-Oct-2024 for providing Vastu services at <b>New Jersey /
+                Dallas / Washington DC / Texas</b> in USA and on call in Canada
+        </p>
+    </div> -->
+
+    <!-- Main Section -->
+    <section class="main-section" id="">
+        <div class="live-visits col-lg-6 col-md-12">
+            <p class="title-text medium">October 2024 USA - Schedule</p>
+
+            <table class="">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>State</th>
+                        <!-- <th>City/Village</th> -->
+                    </tr>
+                </thead>
+
+                <tbody style="padding-bottom: 0rem;">
+                    <tr>
+                        <td>
+                            <h6>04th to 12th October</h6>
+                        </td>
+                        <td>
+                            <h6> New Jercy</h6>
+                        </td>
+                        <!-- <td>Kakinada, Pithapuram, Coringa</td> -->
+                    </tr>
+                    <tr>
+                        <td>
+                            <h6> 13th to 18TH October</h6>
+                        </td>
+                        <td>
+                            <h6> Washington DC</h6>
+                        </td>
+                        <!-- <td>Kakinada</td> -->
+                    </tr>
+                    <tr>
+                        <td>
+                            <h6>19th to 23rd October </h6>
+                        </td>
+                        <td>
+                            <h6>North Corolina / Texas </h6>
+                        </td>
+                        <!-- <td>Kakinada, Amalapuram, Bejawada, Kathipudi</td> -->
+                    </tr>
+                    <tr>
+                        <td>
+                            <h6> 24th to 28TH October</h6>
+                        </td>
+                        <td>
+                            <h6>Dallas / Arizona </h6>
+                        </td>
+                        <!-- <td>Kakinada</td> -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="col-lg-6 col-md-12">
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSeJt70UrYU_HSS7jHGqW9OVT0WoaD-tSgBb9133S8IjCaFovQ/viewform?embedded=true"
+                width="100%" height="1000px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer  start-->
+    <footer id="Footer">
+        <div class="pre-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="logo-col col-sm-6 col-md-6 col-lg-3">
+                        <div class="logo">
+                            <a href="../index.html">
+                                <img src="../images/logo/sv_full_logo_.png" alt="Sudarshanavani_Logo"
+                                    class="nav-logo-img">
+                            </a>
+                        </div>
+                        <!-- not working to do -->
+                        <div class="pf-visitor-count">
+                            <!-- <img src="assets/icons/svg_icons/visitor_black.svg" alt="SVG icon" class="">
+                                <p class="pf-visitor-num-count">10000</p> -->
+                            <div class="counter">
+                                <img src="https://hitwebcounter.com/counter/counter.php?page=13033909&style=0006&nbdigits=6&type=ip&initCount=0"
+                                    title="Counter Widget" Alt="Visit counter For Websites" /></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quick-links col-sm-6 col-md-6 col-lg-3">
+                        <p class="pf-col-title semibold">
+                            QUICK LINKS
+                        </p>
+                        <ul>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <!-- <li><a href="projects.html">Projects</a></li> -->
+                            <li><a href="imageGallery.html">Gallery</a></li>
+                        </ul>
+                        <div class="sv-rounded-btn">
+                            <a href="appointment.html">Book Appointment</a>
+                            <img src="assets/icons/svg_icons/caret_right_black.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="browse-by col-sm-6 col-md-6 col-lg-3">
+                        <p class="pf-col-title semibold">
+                            BROWSE BY CONTENT
+                        </p>
+                        <ul>
+                            <li><a href="appointment.html">Live Visits Schedule</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="follow-us col-sm-6 col-md-6 col-lg-3">
+                        <p class="pf-col-title semibold">
+                            FOLLOW US ON
+                        </p>
+                        <div class="pf-social-links">
+                            <div class="pf-sl-yt">
+                                <img src="../assets/icons/svg_icons/youtube_black.svg" alt="">
+                                <a href="javascript:window.open(YOUTUBE_URL);">Youtube</a>
+                            </div>
+                            <div class="pf-sl-fb">
+                                <img src="../assets/icons/svg_icons/facebook_black.svg" alt="">
+                                <a href="javascript:window.open(FACEBOOK_URL);">Facebook</a>
+                            </div>
+                            <div class="pf-sl-i">
+                                <img src="../assets/icons/svg_icons/instagram_black.svg" alt="">
+                                <a href="javascript:window.open(INSTAGRAM_URL);">Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <!-- <p>Copyright © 2024 Sudarshanavani</p> -->
+            <p>Copyright © 2024 Sudarshanavani</p>
+        </div>
+    </footer>
+
+    <!-- Chat on WhatsApp Float Button -->
+    <a href="javascript:window.open(WA_URL);" class="chat-on-wa">
+        <img src="../assets/icons/svg_icons/whatsapp_logo.svg" alt="">
+    </a>
+
+    <!-- Scroll To Top Float Button -->
+    <div class="scroll-to-top">
+        <a href="#">
+            <img src="../assets/icons/svg_icons/caret_up.svg" alt="" class="scroll_to_top_caret_up_svg">
+        </a>
+    </div>
+
+    <!-- Footer  end-->
+    <!-- AJAX Form Submission for GetInTouch -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Load Scripts -->
+    <script src="../js/index.js"></script>
+    <script src="../js/contants.js"></script>
+</body>
+
+</html>
