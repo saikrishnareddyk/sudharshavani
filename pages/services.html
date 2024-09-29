@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appointment | Sudarshanavani</title>
+    <title>Services | Sudarshanavani</title>
 
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
@@ -28,93 +28,14 @@
 
     <!-- Custom CSS -->
     <link href="../css/styles.css" rel="stylesheet" />
-
     <style>
-        .main-section {
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 6rem;
-            padding: 5rem 1rem;
+        .section-underline {
+            width: 80px;
+            height: 2px;
+            background-color: black;
+            margin-top: 10px;
         }
 
-        /* Live Visits Schedule */
-        .live-visits {
-            flex-basis: fit-content;
-            padding: 1.5rem 2rem;
-            border-radius: 24px;
-            background: var(--primary-gray);
-            box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-        }
-
-        .live-visits .title-text {
-            font-size: 18px;
-            color: var(--primary-blue);
-        }
-
-        table {
-            margin-top: 1rem;
-            font-size: 14px;
-            max-width: 450px;
-        }
-
-        th {
-            border-top: 1px solid black;
-            border-bottom: 1px solid black;
-            padding: .4rem .8rem;
-            font-size: 14px;
-        }
-
-        td {
-            padding: .2rem .8rem;
-            font-size: 12px;
-            font-weight: 300;
-        }
-
-        /* Appointment Form */
-        .appointment-form {
-            /* background: orange; */
-        }
-
-        /* .appointment-form .info-text {
-            font-size: 14px;
-            padding-bottom: 1rem;
-        } */
-
-        .booking-form {
-            /* background: yellow; */
-        }
-
-        /* 
-        .form-row {
-            padding-bottom: 1rem;
-        }
-
-        .form-input {
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            border: 1px solid black;
-            font-size: 14px;
-            width: 100%;
-        }
-        
-        .form-select {
-            padding: .5rem 1rem;
-            border-radius: 25px;
-            border: 1px solid black;
-            font-size: 14px;
-            width: 100%;
-        }
-
-        textarea {
-            height: 140px;
-        }
-
-        .sv-rounded-btn {
-            font-size: 14px;
-        } */
     </style>
 </head>
 
@@ -135,10 +56,14 @@
                     </a>
                 </div>
                 <div class="ph-mobile-info">
-                    <img src="../assets/icons/svg_icons/call_icn.svg" alt="SVG icon" loading="lazy">
+                    <a href="tel:+19152576039">
+                        <img src="../assets/icons/svg_icons/call_icn.svg" alt="SVG icon" loading="lazy">
+                    </a>
                     <p>
-                        <a href="tel:+917093334559" class="ph-mobile-num">+91 70933 34559 </a> |
-                        <a href="tel:+917093334669" class="ph-mobile-num">70933 34669</a>
+                        <a href="tel:+919000876039" class="ph-mobile-num">+91 90008 76039 </a> |
+                        <a href="tel:+917093334669" class="ph-mobile-num hideMobile">70933 34669 |</a>
+                        <br class="mobile-break">
+                        <a href="tel:+19152576039" class="ph-mobile-num">+1 91525 76039(USA)</a>
                     </p>
 
                 </div>
@@ -184,7 +109,7 @@
         <!-- Navbar -->
         <div class="navbar">
             <div class="nav-logo">
-                <a href="../index.html">
+                <a href="#">
                     <img src="../images/logo/sv_full_logo_.png" alt="Sudarshanavani_Logo" class="nav-logo-img">
                 </a>
             </div>
@@ -194,19 +119,17 @@
                     <li><a href="../index.html" class="">Home</a></li>
                     <li><a href="aboutus.html">About</a></li>
                     <li>
-                        <a href="../index.html#Services">Services</a>
+                        <a href="./services.html" class="active">Services</a>
                     </li>
                     <li>
-                        <a href="../index.html#Gallery">Gallery</a>
+                        <a href="imageGallery.html">Gallery</a>
                         <img src="../assets/icons/svg_icons/caret_down_black.svg" alt="">
                         <ul class="gallery-dropdown">
                             <li><a href="imageGallery.html">Image Gallery</a></li>
                             <li><a href="videoGallery.html">Video Gallery</a></li>
-                            <li><a href="../index.html#Videos">Trending Videos</a></li>
                         </ul>
                     </li>
-                    <!-- <li><a href="projects.html">Projects</a></li> -->
-                    <li><a href="../index.html#Contact">Get In Touch</a></li>
+                    <li><a href="./getInTouch.html">Get In Touch</a></li>
                 </ul>
                 <a href="appointment.html" class="nav-cta-btn">Book Appointment</a>
             </div>
@@ -225,19 +148,17 @@
                 <li><a onclick=hideSidenav() href="../index.html" class="active">Home</a></li>
                 <li><a onclick=hideSidenav() href="aboutus.html">About</a></li>
                 <li>
-                    <a onclick=hideSidenav() href="../index.html#Services">Services</a>
+                    <a onclick=hideSidenav() href="./services.html">Services</a>
                 </li>
                 <li>
-                    <a onclick=hideSidenav() href="../index.html#Gallery">Gallery</a>
+                    <a onclick=hideSidenav() href="imageGallery.html">Gallery</a>
                     <img src="../assets/icons/svg_icons/caret_down_black.svg" alt="">
                     <ul class="resp-gallery-dropdown">
                         <li><a onclick=hideSidenav() href="imageGallery.html">Image Gallery</a></li>
                         <li><a onclick=hideSidenav() href="videoGallery.html">Video Gallery</a></li>
-                        <li><a onclick=hideSidenav() href="../index.html#Videos">Trending Videos</a></li>
                     </ul>
                 </li>
-                <!-- <li><a onclick=hideSidenav() href="projects.html">Projects</a></li> -->
-                <li><a onclick=hideSidenav() href="../index.html#Contact">Get In Touch</a></li>
+                <li><a onclick=hideSidenav() href="./getInTouch.html">Get In Touch</a></li>
             </ul>
             <a href="./appointment.html" class="resp-nav-cta-btn">Book Appointment</a>
         </div>
@@ -246,84 +167,74 @@
 
     <!-- Page Title -->
     <div class="page-title-container">
-        <p>Book Appointment</p>
+        <p>Our Services</p>
         <span class="text-separator"></span>
     </div>
 
-    <!-- <div class="container p-3">
-        <h4 class="text-center">Note</h4>
-        <p class="p-2"><b>Swamy Garu</b> has been invited by <b>Telangana Development Forum (TDF-USA)</b> for the upcoming Bathukamma Festival
-            event to be held at New Jersey, USA from <b>03.10.2024 to 12.10.2024 </b> for providing Vastu insights and awareness
-            to the participants.</p>
-        <p class="p-2">
-            Swamy Garu would be available from 04-Oct-2024 to 31-Oct-2024 for providing Vastu services at <b>New Jersey /
-                Dallas / Washington DC / Texas</b> in USA and on call in Canada
-        </p>
-    </div> -->
+    <section id="Services">
+        <!-- <div class="services"> -->
+        <!-- <p class="section-title">Services Offered</p> -->
+        <!-- </div> -->
 
-    <!-- Main Section -->
-    <section class="main-section" id="">
-        <div class="live-visits col-lg-6 col-md-12">
-            <p class="title-text medium">October 2024 USA - Schedule</p>
+        <div class="services-list">
+            <a href="https://wa.me/917093334559?text=Hi Sudarshanavani, I need consultancy for New House Plan">
+                <div class="service-item">
+                    <img src="../../images/logo/sv_logo.png" alt="" loading="lazy">
+                    <p>New House Plan</p>
+                </div>
+            </a>
 
-            <table class="">
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>State</th>
-                        <!-- <th>City/Village</th> -->
-                    </tr>
-                </thead>
+            <a href="https://wa.me/917093334559?text=Hi Sudarshanavani, I need consultancy for Factory Plan">
+                <div class="service-item">
+                    <img src="../images/logo/sv_logo.png" alt="" loading="lazy">
+                    <p>Factory Plan</p>
+                </div>
+            </a>
 
-                <tbody style="padding-bottom: 0rem;">
-                    <tr>
-                        <td>
-                            <h6>04th to 12th October</h6>
-                        </td>
-                        <td>
-                            <h6> New Jercy</h6>
-                        </td>
-                        <!-- <td>Kakinada, Pithapuram, Coringa</td> -->
-                    </tr>
-                    <tr>
-                        <td>
-                            <h6> 13th to 18TH October</h6>
-                        </td>
-                        <td>
-                            <h6> Washington DC</h6>
-                        </td>
-                        <!-- <td>Kakinada</td> -->
-                    </tr>
-                    <tr>
-                        <td>
-                            <h6>19th to 23rd October </h6>
-                        </td>
-                        <td>
-                            <h6>North Corolina / Texas </h6>
-                        </td>
-                        <!-- <td>Kakinada, Amalapuram, Bejawada, Kathipudi</td> -->
-                    </tr>
-                    <tr>
-                        <td>
-                            <h6> 24th to 28TH October</h6>
-                        </td>
-                        <td>
-                            <h6>Dallas / Arizona </h6>
-                        </td>
-                        <!-- <td>Kakinada</td> -->
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+            <a href="https://wa.me/917093334559?text=Hi Sudarshanavani, I need consultancy for Layout Plan">
+                <div class="service-item">
+                    <img src="../images/logo/sv_logo.png" alt="" loading="lazy">
+                    <p>Layout Plan</p>
+                </div>
+            </a>
 
+            <a href="https://wa.me/917093334559?text=Hi Sudarshanavani, I need consultancy for Apartment Plan">
+                <div class="service-item">
+                    <img src="../images/logo/sv_logo.png" alt="" loading="lazy">
+                    <p>Apartment Plan</p>
+                </div>
+            </a>
 
-        <div class="col-lg-6 col-md-12">
-            <iframe
-                src="https://docs.google.com/forms/d/e/1FAIpQLSeJt70UrYU_HSS7jHGqW9OVT0WoaD-tSgBb9133S8IjCaFovQ/viewform?embedded=true"
-                width="100%" height="1000px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <a
+                href="https://wa.me/917093334559?text=Hi Sudarshanavani, I need consultancy for Ovserseas Services (USA)">
+                <div class="service-item">
+                    <img src="../images/logo/sv_logo.png" alt="" loading="lazy">
+                    <p>Ovserseas Services (USA)</p>
+                </div>
+            </a>
+
+            <a href="https://wa.me/917093334559?text=Hi Sudarshanavani, I need consultancy for Engineering Services">
+                <div class="service-item">
+                    <img src="../images/logo/sv_logo.png" alt="" loading="lazy">
+                    <p>Engineering Services</p>
+                </div>
+            </a>
+
+            <a href="https://wa.me/917093334559?text=Hi Sudarshanavani, I need consultancy for Plan Modification">
+                <div class="service-item">
+                    <img src="../images/logo/sv_logo.png" alt="" loading="lazy">
+                    <p>Plan Modification</p>
+                </div>
+            </a>
+
+            <a href="https://wa.me/917093334559?text=Hi Sudarshanavani, I need consultancy for House Renovation">
+                <div class="service-item">
+                    <img src="../images/logo/sv_logo.png" alt="" loading="lazy">
+                    <p>House Renovation</p>
+                </div>
+            </a>
         </div>
     </section>
-
     <!-- Footer -->
     <!-- Footer  start-->
     <footer id="Footer">
@@ -332,7 +243,7 @@
                 <div class="row">
                     <div class="logo-col col-sm-6 col-md-6 col-lg-3">
                         <div class="logo">
-                            <a href="../index.html">
+                            <a href="#">
                                 <img src="../images/logo/sv_full_logo_.png" alt="Sudarshanavani_Logo"
                                     class="nav-logo-img">
                             </a>
@@ -354,12 +265,12 @@
                         </p>
                         <ul>
                             <li><a href="aboutus.html">About Us</a></li>
-                            <!-- <li><a href="projects.html">Projects</a></li> -->
+
                             <li><a href="imageGallery.html">Gallery</a></li>
                         </ul>
                         <div class="sv-rounded-btn">
                             <a href="appointment.html">Book Appointment</a>
-                            <img src="assets/icons/svg_icons/caret_right_black.svg" alt="">
+                            <img src="../assets/icons/svg_icons/caret_right_black.svg" alt="">
                         </div>
                     </div>
 
@@ -418,9 +329,11 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
+
     <!-- Load Scripts -->
     <script src="../js/index.js"></script>
     <script src="../js/contants.js"></script>
+
 </body>
 
 </html>

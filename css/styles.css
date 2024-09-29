@@ -196,16 +196,17 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p, section {
 .ph-mail-info a {
     color: white;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .ph-mail-info p, 
 .ph-mobile-info p{
     color: white;
 }
+.mobile-break { display: none; }
 .ph-mobile-num{
-    font-weight: 600;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 18px;
     color: white;
 }
 
@@ -1206,6 +1207,27 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p, section {
     padding: 10px;
 }
 
+/* get in touch */
+.social-media-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Space between cards */
+}
+
+.social-card {
+    flex: 1 1 200px;
+    /* Flexible width with a minimum of 200px */
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .social-card {
+        flex: 1 1 100%;
+        /* Full width on smaller screens */
+    }
+}
+
 
 /*--------------------------------------------------
 |                  MEDIA QUERIES                   |
@@ -1275,10 +1297,10 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p, section {
 
 @media(max-width: 870px) {
     /* Pre-Header */
-    .ph-mobile-info {
+    /* .ph-mobile-info {
         display: none;
         transition: .2s ease;
-    }
+    } */
 }
 
 @media(max-width: 820px) {
@@ -1310,8 +1332,17 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p, section {
 
 @media(max-width: 600px) {
     /* Pre-Header */
-    .ph-contact-info {
+    .ph-mail-info {
         display: none;
+    }
+    .mobile-break { display: block; }
+    .hideMobile{
+        display: none;
+    }
+    .ph-mobile-num{
+        font-weight: 500;
+        font-size: 14px;
+        color: white;
     }
     .ph-col-right {
         flex-grow: 1;

@@ -142,10 +142,14 @@
                     </a>
                 </div>
                 <div class="ph-mobile-info">
-                    <img src="../assets/icons/svg_icons/call_icn.svg" alt="SVG icon" loading="lazy">
+                    <a href="tel:+19152576039">
+                        <img src="../assets/icons/svg_icons/call_icn.svg" alt="SVG icon" loading="lazy">
+                    </a>
                     <p>
-                        <a href="tel:+917093334559" class="ph-mobile-num">+91 70933 34559 </a> |
-                        <a href="tel:+917093334669" class="ph-mobile-num">70933 34669</a>
+                        <a href="tel:+919000876039" class="ph-mobile-num">+91 90008 76039 </a> |
+                        <a href="tel:+917093334669" class="ph-mobile-num hideMobile">70933 34669 |</a>
+                        <br class="mobile-break">
+                        <a href="tel:+19152576039" class="ph-mobile-num">+1 91525 76039(USA)</a>
                     </p>
 
                 </div>
@@ -201,21 +205,19 @@
                     <li><a href="../index.html" class="">Home</a></li>
                     <li><a href="aboutus.html">About</a></li>
                     <li>
-                        <a href="../index.html#Services">Services</a>
+                        <a href="services.html">Services</a>
                     </li>
                     <li>
-                        <a href="../index.html#Gallery">Gallery</a>
+                        <a href="imageGallery.html">Gallery</a>
                         <img src="../assets/icons/svg_icons/caret_down_black.svg" alt="">
                         <ul class="gallery-dropdown">
                             <li><a href="imageGallery.html">Image Gallery</a></li>
                             <li><a href="videoGallery.html">Video Gallery</a></li>
-                            <li><a href="../index.html#Videos">Trending Videos</a></li>
                         </ul>
                     </li>
-                    <!-- <li><a href="projects.html">Projects</a></li> -->
-                    <li><a href="../index.html#Contact">Get In Touch</a></li>
+                    <li><a href="getInTouch.html">Get In Touch</a></li>
                 </ul>
-                <a href="appointment.html" class="nav-cta-btn">Book Appointment</a>
+                <a href="appointment.html" class="nav-cta-btn active">Book Appointment</a>
             </div>
 
             <div onclick=showSidenav() class="nav-toggle-btn">
@@ -232,21 +234,19 @@
                 <li><a onclick=hideSidenav() href="../index.html" class="active">Home</a></li>
                 <li><a onclick=hideSidenav() href="aboutus.html">About</a></li>
                 <li>
-                    <a onclick=hideSidenav() href="../index.html#Services">Services</a>
+                    <a onclick=hideSidenav() href="services.html">Services</a>
                 </li>
                 <li>
-                    <a onclick=hideSidenav() href="../index.html#Gallery">Gallery</a>
+                    <a onclick=hideSidenav() href="imageGallery.html">Gallery</a>
                     <img src="../assets/icons/svg_icons/caret_down_black.svg" alt="">
                     <ul class="resp-gallery-dropdown">
                         <li><a onclick=hideSidenav() href="imageGallery.html">Image Gallery</a></li>
                         <li><a onclick=hideSidenav() href="videoGallery.html">Video Gallery</a></li>
-                        <li><a onclick=hideSidenav() href="../index.html#Videos">Trending Videos</a></li>
                     </ul>
                 </li>
-                <!-- <li><a onclick=hideSidenav() href="projects.html">Projects</a></li> -->
-                <li><a onclick=hideSidenav() href="../index.html#Contact">Get In Touch</a></li>
+                <li><a onclick=hideSidenav() href="getInTouch.html">Get In Touch</a></li>
             </ul>
-            <a href="./appointment.html" class="resp-nav-cta-btn">Book Appointment</a>
+            <a href="./appointment.html" class="resp-nav-cta-btn ">Book Appointment</a>
         </div>
     </header>
     <!-- header end -->
@@ -375,7 +375,7 @@
                 </div>
                 <div class="form-row">
                     <textarea name="entry.1166870214" class="form-input" id="issue"
-                        placeholder="Add short description of your requirement" required></textarea>
+                        placeholder="Add description of your requirement in minimum 50 words" required></textarea>
                     <span class="error-message" id="issue-error"></span>
                 </div>
                 <div class="form-row">
@@ -422,12 +422,11 @@
                         </p>
                         <ul>
                             <li><a href="aboutus.html">About Us</a></li>
-                            <!-- <li><a href="projects.html">Projects</a></li> -->
                             <li><a href="imageGallery.html">Gallery</a></li>
                         </ul>
                         <div class="sv-rounded-btn">
                             <a href="appointment.html">Book Appointment</a>
-                            <img src="assets/icons/svg_icons/caret_right_black.svg" alt="">
+                            <img src="../assets/icons/svg_icons/caret_right_black.svg" alt="">
                         </div>
                     </div>
 
